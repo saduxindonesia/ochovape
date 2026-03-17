@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "booking": "Book Now"
+  },
+  "hero": {
+    "headline": "Trusted Motorcycle Workshop — Fast Service, Transparent Pricing",
+    "subheadline": "Specialists in all motorcycle brands. Experienced mechanics, original spare parts.",
+    "cta_wa": "Contact Us via WhatsApp",
+    "cta_services": "View Our Services",
+    "badge": "4.9/5 Rating | 500+ Satisfied Customers"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Serving All Types of Motorcycles",
+    "note": "We serve all motorcycle types (Scooter, Underbone, Sport, etc.)"
+  },
+  "whyUs": {
+    "title": "Why Choose Roma Motor?",
+    "subtitle": "We are committed to providing the best service for your motorcycle",
+    "experience": "Years of Experience",
+    "customers": "Motorcycles Serviced",
+    "mechanics": "Expert Mechanics",
+    "point1_title": "Experienced Mechanics",
+    "point1_desc": "Our mechanics are trained and certified",
+    "point2_title": "Original Spare Parts & Warranty",
+    "point2_desc": "All spare parts come with official warranty",
+    "point3_title": "Transparent Pricing",
+    "point3_desc": "No hidden fees, upfront cost estimates"
+  },
+  "gallery": {
+    "title": "Workshop Gallery",
+    "subtitle": "See our workshop atmosphere and work process"
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our satisfied customers say"
+  },
+  "location": {
+    "title": "Workshop Location",
+    "subtitle": "Find us on Google Maps",
+    "address": "Address",
+    "hours": "Operating Hours",
+    "phone": "Phone",
+    "directions": "Get Directions"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our services"
+  },
+  "blog": {
+    "title": "Blog & Articles",
+    "subtitle": "Tips and information about motorcycle maintenance",
+    "readMore": "Read More",
+    "back": "Back to Blog",
+    "share": "Share",
+    "allPosts": "All Articles"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or want to book? Send us a message",
+    "name": "Full Name",
+    "whatsapp": "WhatsApp Number",
+    "vehicle": "Motorcycle Type",
+    "service": "Service Type",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully! We will contact you shortly.",
+    "select_service": "Select Service"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "credit": "Made with ❤️ by",
+    "copyright": "© 2026 Roma Motor. All rights reserved."
+  }
+}

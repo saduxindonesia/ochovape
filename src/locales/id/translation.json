@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "about": "Tentang Kami",
+    "gallery": "Galeri",
+    "testimonials": "Testimoni",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Kontak",
+    "booking": "Booking Sekarang"
+  },
+  "hero": {
+    "headline": "Bengkel Motor Terpercaya — Servis Cepat, Harga Transparan",
+    "subheadline": "Spesialis service motor semua merk. Mekanik berpengalaman, spare part original.",
+    "cta_wa": "Hubungi Kami via WhatsApp",
+    "cta_services": "Lihat Layanan Kami",
+    "badge": "4.9/5 Rating | 500+ Pelanggan Puas"
+  },
+  "services": {
+    "title": "Layanan Kami",
+    "subtitle": "Melayani Semua Jenis Sepeda Motor",
+    "note": "Melayani semua jenis sepeda motor (Matic, Bebek, Sport, dll)"
+  },
+  "whyUs": {
+    "title": "Kenapa Pilih Roma Motor?",
+    "subtitle": "Kami berkomitmen memberikan layanan terbaik untuk motor Anda",
+    "experience": "Tahun Pengalaman",
+    "customers": "Motor Diservis",
+    "mechanics": "Mekanik Ahli",
+    "point1_title": "Mekanik Berpengalaman",
+    "point1_desc": "Tim mekanik kami terlatih dan bersertifikat",
+    "point2_title": "Spare Part Original & Garansi",
+    "point2_desc": "Semua spare part bergaransi resmi",
+    "point3_title": "Harga Transparan",
+    "point3_desc": "Tanpa biaya tersembunyi, estimasi biaya di awal"
+  },
+  "gallery": {
+    "title": "Galeri Bengkel",
+    "subtitle": "Lihat suasana bengkel dan proses kerja kami"
+  },
+  "testimonials": {
+    "title": "Testimoni Pelanggan",
+    "subtitle": "Apa kata pelanggan kami yang puas"
+  },
+  "location": {
+    "title": "Lokasi Bengkel",
+    "subtitle": "Temukan kami di Google Maps",
+    "address": "Alamat",
+    "hours": "Jam Operasional",
+    "phone": "Telepon",
+    "directions": "Dapatkan Arah"
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Temukan jawaban untuk pertanyaan umum seputar layanan kami"
+  },
+  "blog": {
+    "title": "Blog & Artikel",
+    "subtitle": "Tips dan informasi seputar perawatan motor",
+    "readMore": "Baca Selengkapnya",
+    "back": "Kembali ke Blog",
+    "share": "Bagikan",
+    "allPosts": "Semua Artikel"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Ada pertanyaan atau ingin booking? Kirim pesan kepada kami",
+    "name": "Nama Lengkap",
+    "whatsapp": "Nomor WhatsApp",
+    "vehicle": "Jenis Motor",
+    "service": "Jenis Layanan",
+    "message": "Pesan",
+    "send": "Kirim Pesan",
+    "success": "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.",
+    "select_service": "Pilih Layanan"
+  },
+  "footer": {
+    "quickLinks": "Link Cepat",
+    "contactInfo": "Info Kontak",
+    "followUs": "Ikuti Kami",
+    "credit": "Dibuat dengan ❤️ oleh",
+    "copyright": "© 2026 Roma Motor. All rights reserved."
+  }
+}
