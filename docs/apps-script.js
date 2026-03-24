@@ -1,6 +1,6 @@
 /**
  * ============================================================
- * Google Apps Script — Roma Motor API
+ * Google Apps Script — Ocho Vape Store API
  * ============================================================
  *
  * INSTRUCTIONS:
@@ -21,7 +21,7 @@ const SPREADSHEET_ID = '1CAr1qJyK9HwUznGlIsjQubJ0GaH6arAZRCoKVVBNEd8';
 
 // Sheet names in the spreadsheet
 const SHEET_NAMES = {
-  services: 'services',
+  products: 'products',
   testimonials: 'testimonials',
   faqs: 'faqs',
   running_texts: 'running_texts',

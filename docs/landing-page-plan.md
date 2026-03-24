@@ -1,8 +1,8 @@
-# 🏍️ Roma Motor - Landing Page Bengkel & Service Motor
+# 🏍️ Ocho Vape Store - Landing Page vape store & Service vape
 
 ## 📋 Ringkasan Proyek
 
-Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — bengkel & service motor. Website ini akan menampilkan layanan bengkel, membangun kepercayaan pelanggan, dan mengoptimalkan pencarian lokal (Local SEO).
+Membangun landing page profesional dan SEO-friendly untuk **Ocho Vape Store** — vape store & service vape. Website ini akan menampilkan layanan vape store, membangun kepercayaan pelanggan, dan mengoptimalkan pencarian lokal (Local SEO).
 
 **Tech Stack:** React + Vite + Tailwind CSS v3
 
@@ -14,7 +14,7 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 ## 🎯 Struktur Section Landing Page
 
 ### 1. 🔝 Navbar / Header
-- Logo Roma Motor (kiri)
+- Logo Ocho Vape Store (kiri)
 - Menu navigasi: Beranda | Layanan | Tentang Kami | Galeri | Testimoni | Blog | FAQ | Kontak
 - Tombol CTA: **"Booking Sekarang"** (highlight warna)
 - **🌗 Dark/Light Mode Toggle** (icon sun/moon di navbar)
@@ -24,9 +24,9 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - SEO: semantic `<nav>`, `aria-label`
 
 ### 2. 🦸 Hero Banner (Full-Width)
-- **Background:** Video atau gambar hero mekanik sedang bekerja dengan overlay gradient gelap
-- **Headline utama:** "Bengkel Motor Terpercaya — Servis Cepat, Harga Transparan"
-- **Sub-headline:** "Spesialis service motor semua merk. Mekanik berpengalaman, spare part original."
+- **Background:** Video atau gambar hero vapista sedang bekerja dengan overlay gradient gelap
+- **Headline utama:** "vape store vape Terpercaya — Servis Cepat, Harga Transparan"
+- **Sub-headline:** "Spesialis service vape semua merk. vapista berpengalaman, spare part original."
 - **Dual CTA Button:**
   - 🟢 "Hubungi Kami via WhatsApp" (link ke WA)
   - 🔵 "Lihat Layanan Kami" (scroll ke section layanan)
@@ -42,14 +42,14 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - Konten contoh:
   - "🔧 Promo Ganti Oli Gratis Cek Mesin!"
   - "📞 Booking Online Sekarang — Tanpa Antri!"
-  - "🏆 Bengkel Terpercaya Sejak 2015"
+  - "🏆 vape store Terpercaya Sejak 2015"
   - "⚡ Service Express 30 Menit!"
 - Bisa di-manage dari Admin Panel (teks & status aktif/nonaktif)
 - Background gradient merah (`from-[#1a0000] via-primary to-[#1a0000]`), font bold uppercase
 - Hover pause animation
 
 ### 4. 🔧 Section Layanan / Services
-- **Tagline:** "Melayani Semua Jenis Sepeda Motor"
+- **Tagline:** "Melayani Semua Jenis Sepeda vape"
 - **Layout:** Grid 2 kolom di mobile, 4 kolom di desktop
 - Kartu layanan dengan **ikon, judul, deskripsi singkat, dan harga mulai dari**
 - **Daftar Layanan:**
@@ -61,24 +61,24 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
   - 🏗️ **Turun Mesin** — Overhaul mesin total
   - 🚀 **BoreUp** — Upgrade kapasitas mesin
   - 🔋 **Kelistrikan** — Perbaikan sistem kelistrikan & injection
-- **Catatan:** Melayani semua jenis sepeda motor (Matic, Bebek, Sport, dll)
+- **Catatan:** Melayani semua jenis sepeda vape (Matic, Bebek, Sport, dll)
 - Hover/tap effect: lift card + shadow + accent border
 - Tombol "Selengkapnya" di tiap kartu (opsional)
 - **📱 Mobile:** Horizontal scroll cards atau swipeable grid
 - SEO: `<h2>` untuk judul section, schema markup `Service`
 
-### 5. ❓ Kenapa Pilih Roma Motor? (Why Choose Us)
+### 5. ❓ Kenapa Pilih Ocho Vape Store? (Why Choose Us)
 - **Layout:** 4 kolom icon-box atau alternating image-text
 - Poin keunggulan:
-  - ✅ Mekanik Berpengalaman
+  - ✅ vapista Berpengalaman
   - ✅ Spare Part Original & Garansi
   - ✅ Harga Transparan, Tanpa Biaya Tersembunyi
-- Counter animasi: "10+ Tahun Pengalaman", "5000+ Motor Diservis", "50+ Mekanik Ahli"
+- Counter animasi: "10+ Tahun Pengalaman", "5000+ vape Diservis", "50+ vapista Ahli"
 - SEO: `<h2>`, deskriptif alt-text pada gambar
 
-### 6. 📸 Galeri Bengkel
+### 6. 📸 Galeri vape store
 - **Layout:** Masonry grid / lightbox gallery
-- Foto-foto: suasana bengkel, proses service, before-after, tim mekanik
+- Foto-foto: suasana vape store, proses service, before-after, tim vapista
 - Hover: zoom-in effect
 - Lazy loading untuk performa
 - SEO: `alt` tag deskriptif pada setiap gambar
@@ -87,7 +87,7 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - **Layout:** Carousel/slider dengan auto-play
 - Setiap card testimoni:
   - Foto pelanggan (avatar)
-  - Nama & jenis motor
+  - Nama & jenis vape
   - Rating bintang (⭐⭐⭐⭐⭐)
   - Kutipan testimoni
 - Navigasi: dots indicator + swipe gesture di mobile
@@ -95,9 +95,9 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 
 ### 8. 📍 Lokasi & Google Maps
 - **Google Maps embed interaktif** (iframe responsive, full-width)
-- Pin lokasi bengkel dengan marker custom (logo Roma Motor)
+- Pin lokasi vape store dengan marker custom (logo Ocho Vape Store)
 - Informasi:
-  - Alamat lengkap bengkel
+  - Alamat lengkap vape store
   - Jam operasional (Senin–Sabtu: 08:00–17:00)
   - Nomor telepon & WhatsApp
 - Tombol **"Dapatkan Arah / Get Directions"** (buka Google Maps / Waze)
@@ -109,14 +109,14 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - Form fields:
   - Nama lengkap
   - Nomor WhatsApp
-  - Jenis motor
+  - Jenis vape
   - Keluhan / jenis layanan (dropdown)
   - Pesan (textarea)
 - Tombol "Kirim Pesan" (dummy, simpan ke state/localStorage)
 - **Info Kontak & Sosial Media:**
-  - 📱 **WhatsApp:** Link langsung chat WA (nomor bengkel)
-  - 📸 **Instagram:** @romamotor (link ke profil IG)
-  - 🎵 **TikTok:** @romamotor (link ke profil TikTok)
+  - 📱 **WhatsApp:** Link langsung chat WA (nomor vape store)
+  - 📸 **Instagram:** @OchoVape (link ke profil IG)
+  - 🎵 **TikTok:** @OchoVape (link ke profil TikTok)
 - Floating WhatsApp button (fixed di pojok kanan bawah)
 - SEO: Schema markup `ContactPoint`
 
@@ -127,7 +127,7 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
   - "Apakah bisa booking online?"
   - "Spare part apa yang digunakan? Original atau aftermarket?"
   - "Apakah ada garansi service?"
-  - "Motor apa saja yang bisa diservis?"
+  - "vape apa saja yang bisa diservis?"
   - "Bagaimana cara booking via WhatsApp?"
   - "Berapa biaya turun mesin?"
   - "Apakah melayani BoreUp?"
@@ -139,11 +139,11 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - **Layout:** Grid 2 kolom di desktop, 1 kolom di mobile
 - Halaman list artikel + halaman detail artikel
 - Contoh artikel:
-  - "Cara Merawat Motor Matic Agar Awet"
-  - "Tanda-Tanda Motor Harus Ganti Oli"
+  - "Cara Merawat vape Matic Agar Awet"
+  - "Tanda-Tanda vape Harus Ganti Oli"
   - "Tips Memilih Spare Part Original vs Aftermarket"
-  - "Kapan Waktu yang Tepat untuk Tune Up Motor?"
-  - "Panduan Lengkap BoreUp Motor"
+  - "Kapan Waktu yang Tepat untuk Tune Up vape?"
+  - "Panduan Lengkap BoreUp vape"
 - Setiap artikel: judul, thumbnail, tanggal, konten, tags
 - Bisa di-manage dari Admin Panel (CRUD artikel, simpan di localStorage)
 - Share button (WhatsApp, copy link)
@@ -151,13 +151,13 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 - SEO: Schema markup `BlogPosting`, `Article`
 
 ### 12. 🦶 Footer
-- Logo & tagline Roma Motor
+- Logo & tagline Ocho Vape Store
 - Link navigasi cepat
 - **Sosial Media Links:**
   - 📱 WhatsApp (link chat langsung)
-  - 📸 Instagram (@romamotor)
-  - 🎵 TikTok (@romamotor)
-- Copyright © 2026 Roma Motor
+  - 📸 Instagram (@OchoVape)
+  - 🎵 TikTok (@OchoVape)
+- Copyright © 2026 Ocho Vape Store
 - **Credit:** "Dibuat dengan ❤️ oleh [sadux.my.id](https://sadux.my.id)" — ditampilkan di bagian paling bawah footer
 - Link ke halaman Privacy Policy & Terms (opsional)
 - SEO: `<footer>` semantic
@@ -219,7 +219,7 @@ Membangun landing page profesional dan SEO-friendly untuk **Roma Motor** — ben
 
 ### Autentikasi
 - **Username:** `roma`
-- **Password:** `romamotor1234`
+- **Password:** `OchoVape1234`
 - Login form sederhana, validasi di frontend (hardcoded)
 - Session disimpan di `localStorage`
 - Route: `/admin/login`
@@ -238,7 +238,7 @@ Route: `/admin/dashboard`
 | **❓ FAQ** | CRUD pertanyaan & jawaban |
 | **📝 Blog** | CRUD artikel blog (judul, konten, thumbnail, tags) |
 | **📞 Pesan Masuk** | Lihat daftar pesan dari contact form |
-| **⚙️ Pengaturan** | Edit info bengkel (nama, alamat, no telp, jam operasional, link sosmed) |
+| **⚙️ Pengaturan** | Edit info vape store (nama, alamat, no telp, jam operasional, link sosmed) |
 
 ### Desain Admin Panel
 - Sidebar navigation (collapsible, hamburger di mobile)
@@ -252,7 +252,7 @@ Route: `/admin/dashboard`
 ## 🔍 Strategi SEO Terintegrasi
 
 ### On-Page SEO
-- **Title tag:** "Roma Motor — Bengkel & Service Motor Terpercaya di [Kota]"
+- **Title tag:** "Ocho Vape Store — vape store & Service vape Terpercaya di [Kota]"
 - **Meta description:** Deskripsi 150-160 karakter yang mengandung keyword
 - **Heading hierarchy:** H1 → H2 → H3 yang terstruktur
 - **Image optimization:** Format WebP, lazy loading, alt-text deskriptif
@@ -271,8 +271,8 @@ Route: `/admin/dashboard`
 {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  "name": "Roma Motor",
-  "description": "Bengkel & Service Motor Terpercaya",
+  "name": "Ocho Vape Store",
+  "description": "vape store & Service vape Terpercaya",
   "address": { ... },
   "telephone": "...",
   "openingHours": "Mo-Sa 08:00-17:00",
@@ -281,7 +281,7 @@ Route: `/admin/dashboard`
 ```
 
 ### Local SEO
-- Optimasi untuk pencarian lokal ("bengkel motor terdekat", "service motor [kota]")
+- Optimasi untuk pencarian lokal ("vape store vape terdekat", "service vape [kota]")
 - Google My Business integration (link)
 - NAP consistency (Name, Address, Phone)
 
@@ -316,7 +316,7 @@ Route: `/admin/dashboard`
 ## 📁 Struktur Folder Proyek (Sesuai Implementasi)
 
 ```
-romamotor/
+OchoVape/
 ├── public/
 │   ├── robots.txt                     # ✅ Disallow /admin/, sitemap link
 │   └── sitemap.xml                    # ✅ Homepage + blog posts
@@ -420,7 +420,7 @@ romamotor/
 - [x] Running Text / Marquee **3D** (perspective, text-shadow, shine)
 - [x] Section Layanan — 8 layanan (Ganti Oli, Tune Up, Sparepart, Service Berkala, Tambal Ban, Turun Mesin, BoreUp, Kelistrikan)
 - [x] Section Kenapa Pilih Kami (counter animasi + useInView)
-- [x] Galeri Bengkel (masonry grid + lightbox)
+- [x] Galeri vape store (masonry grid + lightbox)
 - [x] Testimoni (Swiper carousel)
 - [x] Lokasi & Google Maps (iframe embed + info cards + Dapatkan Arah)
 - [x] FAQ Accordion (CSS vars untuk light/dark mode)
@@ -431,7 +431,7 @@ romamotor/
 - [x] Scroll To Top Button
 
 ### Admin Panel
-- [x] Admin Login Page (user: `roma`, pass: `romamotor1234`)
+- [x] Admin Login Page (user: `roma`, pass: `OchoVape1234`)
 - [x] Admin Dashboard (6 stat cards + recent messages)
 - [x] Admin CRUD Running Text (add/toggle/delete)
 - [x] Admin CRUD Layanan (modal: icon, title, desc, price)
@@ -440,7 +440,7 @@ romamotor/
 - [x] Admin CRUD FAQ (modal: question + answer)
 - [x] Admin CRUD Blog (modal: title, auto-slug, date, tags, content)
 - [x] Admin Lihat Pesan (view/delete/clear all)
-- [x] Admin Pengaturan Bengkel (shop info form + save)
+- [x] Admin Pengaturan vape store (shop info form + save)
 
 ### SEO & Teknis
 - [x] SEO: Meta tags, OG tags, schema markup (AutoRepair JSON-LD)
