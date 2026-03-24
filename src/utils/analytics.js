@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'roma-analytics';
+const STORAGE_KEY = 'ocho-analytics';
 
 function getAnalytics() {
   try {

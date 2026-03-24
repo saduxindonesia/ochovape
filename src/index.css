@@ -251,13 +251,13 @@ body:not(.dark) {
   white-space: nowrap;
   position: relative;
 
-  /* Gradient text — white/gray */
+  /* Gradient text — white/blue */
   background: linear-gradient(
     180deg,
     #ffffff 0%,
-    #e5e5e5 40%,
-    #a3a3a3 60%,
-    #888888 100%
+    #93c5fd 40%,
+    #3b82f6 60%,
+    #1d4ed8 100%
   );
   -webkit-background-clip: text;
   background-clip: text;

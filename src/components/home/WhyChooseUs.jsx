@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
 
   const counters = [
     { value: '10', suffix: '+', label: t('hero.stat_years') || 'Tahun Pengalaman' },
-    { value: '100', suffix: '%', label: t('hero.stat_guarantee') || 'Garansi Service' },
+    { value: '100', suffix: '%', label: t('hero.stat_guarantee') || 'Garansi Product' },
     { value: '99', suffix: '%', label: t('hero.stat_customers') || 'Pelanggan Puas' },
   ];
 

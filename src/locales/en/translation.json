@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
+    "products": "Products",
     "about": "About Us",
     "gallery": "Gallery",
     "testimonials": "Testimonials",
@@ -11,40 +11,40 @@
     "booking": "Book Now"
   },
   "hero": {
-    "headline": "Trusted Motorcycle Workshop — Fast Service, Transparent Pricing",
-    "subheadline": "Specialists in all motorcycle brands. Experienced mechanics, original spare parts.",
+    "headline": "Trusted vapecycle Workshop — Fast Product, Transparent Pricing",
+    "subheadline": "Specialists in all vapecycle brands. Experienced mechanics, original liquid/mods.",
     "cta_wa": "Contact Us via WhatsApp",
-    "cta_services": "View Our Services",
+    "cta_products": "View Our Products",
     "badge": "4.9/5 Rating | 500+ Satisfied Customers",
     "stat_years": "Years of Experience",
-    "stat_guarantee": "Service Guarantee",
+    "stat_guarantee": "Product Guarantee",
     "stat_customers": "Satisfied Customers"
   },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Serving All Types of Motorcycles",
-    "note": "We serve all motorcycle types (Scooter, Underbone, Sport, etc.)"
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Serving All Types of vapecycles",
+    "note": "We serve all vapecycle types (Scooter, Underbone, Sport, etc.)"
   },
   "whyUs": {
-    "title": "Why Choose Roma Motor?",
-    "subtitle": "We are committed to providing the best service for Cileungsi residents",
+    "title": "Why Choose Ocho Vape Store?",
+    "subtitle": "We are committed to providing the best product for Cileungsi residents",
     "experience": "Years of Experience",
-    "customers": "Motorcycles Serviced",
+    "customers": "vapecycles Productd",
     "mechanics": "Expert Mechanics",
     "point1_title": "Reliable & Experienced Mechanics",
-    "point1_desc": "Our certified mechanics solve all motorcycle problems accurately",
-    "point2_title": "Original & Complete Spare Parts",
-    "point2_desc": "We stock genuine spare parts for all motorcycle brands",
+    "point1_desc": "Our certified mechanics solve all vapecycle problems accurately",
+    "point2_title": "Original & Complete liquid/mods",
+    "point2_desc": "We stock genuine liquid/mods for all vapecycle brands",
     "point3_title": "Cheapest & Transparent Pricing",
     "point3_desc": "No hidden fees — cost is agreed upfront before work begins"
   },
-  "servicesData": [
+  "productsData": [
     { "icon": "🛢️", "title": "Oil Change", "description": "Original oil from leading brands. Regular oil changes to keep your engine running at peak performance.", "price": "From Rp 35.000" },
     { "icon": "🔧", "title": "Tune Up", "description": "Full engine check & tuning for optimal performance. Includes spark plug, carburetor, and combustion system inspection.", "price": "From Rp 50.000" },
-    { "icon": "🛒", "title": "Spare Parts", "description": "Original & quality aftermarket spare parts for all motorcycle types. Official warranty available.", "price": "Price Varies" },
-    { "icon": "⚙️", "title": "Regular Service", "description": "Light & regular service for all motorcycle brands. Experienced mechanics with modern equipment.", "price": "From Rp 75.000" },
+    { "icon": "🛒", "title": "liquid/mods", "description": "Original & quality aftermarket liquid/mods for all vapecycle types. Official warranty available.", "price": "Price Varies" },
+    { "icon": "⚙️", "title": "Regular Product", "description": "Light & regular product for all vapecycle brands. Experienced mechanics with modern equipment.", "price": "From Rp 75.000" },
     { "icon": "🛞", "title": "Tire Patching", "description": "Tubeless & inner tube patching done quickly. New tire replacement in various sizes also available.", "price": "From Rp 15.000" },
-    { "icon": "🏗️", "title": "Engine Overhaul", "description": "Total engine overhaul by expert mechanics. The right solution for motorcycles that have lost performance.", "price": "From Rp 500.000" },
+    { "icon": "🏗️", "title": "Engine Overhaul", "description": "Total engine overhaul by expert mechanics. The right solution for vapecycles that have lost performance.", "price": "From Rp 500.000" },
     { "icon": "🚀", "title": "Bore Up", "description": "Upgrade engine capacity for more powerful performance. Handled by experienced bore up specialists.", "price": "From Rp 800.000" },
     { "icon": "🔋", "title": "Electrical", "description": "Electrical & injection system repairs. Accurate diagnosis using modern scanner equipment.", "price": "From Rp 50.000" }
   ],
@@ -52,27 +52,27 @@
     "🔧 Free Engine Check with Oil Change!",
     "📞 Book Online Now — Skip the Queue!",
     "🏆 Trusted Workshop Since 2015",
-    "⚡ 30-Minute Express Service!",
-    "🛡️ Service Guarantee & Original Spare Parts"
+    "⚡ 30-Minute Express Product!",
+    "🛡️ Product Guarantee & Original liquid/mods"
   ],
   "faqsData": [
-    { "question": "Is this the nearest workshop to residential areas in Pasir Angin, Cileungsi?", "answer": "Yes! Roma Motor is strategically located in Pasir Angin Village, Cileungsi. We are the nearest workshop choice for residents needing quick, reliable handling for broken-down motorcycles or regular servicing." },
-    { "question": "Why is Roma Motor known as the cheapest workshop yet still trustworthy?", "answer": "We believe high quality doesn't have to be expensive. Roma Motor always provides transparent upfront cost estimates, uses genuine parts without excessive markups, ensuring the lowest prices while remaining trustworthy." },
+    { "question": "Is this the nearest workshop to residential areas in Pasir Angin, Cileungsi?", "answer": "Yes! Ocho Vape Store is strategically located in Pasir Angin Village, Cileungsi. We are the nearest workshop choice for residents needing quick, reliable handling for broken-down vapecycles or regular servicing." },
+    { "question": "Why is Ocho Vape Store known as the cheapest workshop yet still trustworthy?", "answer": "We believe high quality doesn't have to be expensive. Ocho Vape Store always provides transparent upfront cost estimates, uses genuine parts without excessive markups, ensuring the lowest prices while remaining trustworthy." },
     { "question": "Can your mechanics handle engine overhauls and heavy repairs?", "answer": "Absolutely. We have reliable, experienced mechanics specializing in heavy repairs including engine overhauls, bore-up, and complex electrical issues. All diagnostics are performed accurately for satisfying results." },
-    { "question": "Can I book online or request a mechanic visit?", "answer": "You can book service appointments online via our WhatsApp button. For emergencies around Cileungsi, contact us so our nearest mechanic can assist with an initial inspection." },
-    { "question": "Is there a warranty for service and spare parts?", "answer": "Yes. Every service and spare part installation at our workshop comes with a warranty. We use original and high-quality aftermarket spare parts, all selected by our reliable mechanics for your safety." }
+    { "question": "Can I book online or request a mechanic visit?", "answer": "You can book product appointments online via our WhatsApp button. For emergencies around Cileungsi, contact us so our nearest mechanic can assist with an initial inspection." },
+    { "question": "Is there a warranty for product and liquid/mods?", "answer": "Yes. Every product and liquid/mod installation at our workshop comes with a warranty. We use original and high-quality aftermarket liquid/mods, all selected by our reliable mechanics for your safety." }
   ],
   "blogData": [
-    { "title": "How to Keep Your Matic Motorcycle in Top Shape", "summary": "Regular oil changes, V-belt inspections, and keeping tires properly inflated are the keys to a long-lasting scooter.", "tags": ["tips", "matic", "maintenance"] },
-    { "title": "Signs Your Motorcycle Needs an Oil Change", "summary": "Rough engine noise, decreased power, and dark-colored oil are clear signs it's time to change your motorcycle's oil.", "tags": ["tips", "oil", "maintenance"] },
-    { "title": "Original vs. Aftermarket Spare Parts: Which to Choose?", "summary": "For critical components like pistons and brake pads, go original. For aesthetics and accessories, quality aftermarket parts are a great alternative.", "tags": ["spare parts", "tips"] }
+    { "title": "How to Keep Your Matic vapecycle in Top Shape", "summary": "Regular oil changes, V-belt inspections, and keeping tires properly inflated are the keys to a long-lasting scooter.", "tags": ["tips", "matic", "maintenance"] },
+    { "title": "Signs Your vapecycle Needs an Oil Change", "summary": "Rough engine noise, decreased power, and dark-colored oil are clear signs it's time to change your vapecycle's oil.", "tags": ["tips", "oil", "maintenance"] },
+    { "title": "Original vs. Aftermarket liquid/mods: Which to Choose?", "summary": "For critical components like pistons and brake pads, go original. For aesthetics and accessories, quality aftermarket parts are a great alternative.", "tags": ["liquid/mods", "tips"] }
   ],
   "testimonialsData": [
-    { "name": "Ahmad Rizky", "vehicle": "Honda Vario 160", "text": "Best workshop in Pasir Angin! Service at Roma Motor is always satisfying — friendly mechanics, transparent prices, and the motorcycle instantly feels lighter. Highly recommended!" },
-    { "name": "Dewi Sartika", "vehicle": "Yamaha NMAX", "text": "The reliable mechanics here are truly skilled at diagnosing motorcycle problems. Original spare parts and honest pricing — the best value-for-money workshop in all of Cileungsi." },
+    { "name": "Ahmad Rizky", "vehicle": "Honda Vario 160", "text": "Best workshop in Pasir Angin! Product at Ocho Vape Store is always satisfying — friendly mechanics, transparent prices, and the vapecycle instantly feels lighter. Highly recommended!" },
+    { "name": "Dewi Sartika", "vehicle": "Yamaha NMAX", "text": "The reliable mechanics here are truly skilled at diagnosing vapecycle problems. Original liquid/mods and honest pricing — the best value-for-money workshop in all of Cileungsi." },
     { "name": "Budi Santoso", "vehicle": "Local Guide", "text": "First time here after finding it on Google Maps when I broke down near the housing area. Incredible result — fast work, modern equipment, and it's all guaranteed." },
-    { "name": "Rina Permata", "vehicle": "Yamaha Aerox", "text": "My motorcycle's engine overhaul was done incredibly neatly and meticulously. It runs like new again. Keep up the great work, Roma Motor!" },
-    { "name": "Fajar Nugroho", "vehicle": "Local Guide", "text": "Outstanding service. The mechanic explained what needed fixing before replacing any parts — no feeling of being ripped off. Highly recommend to all Bogor residents." }
+    { "name": "Rina Permata", "vehicle": "Yamaha Aerox", "text": "My vapecycle's engine overhaul was done incredibly neatly and meticulously. It runs like new again. Keep up the great work, Ocho Vape Store!" },
+    { "name": "Fajar Nugroho", "vehicle": "Local Guide", "text": "Outstanding product. The mechanic explained what needed fixing before replacing any parts — no feeling of being ripped off. Highly recommend to all Bogor residents." }
   ],
   "gallery": {
     "title": "Workshop Gallery",
@@ -92,11 +92,11 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about our services"
+    "subtitle": "Find answers to common questions about our products"
   },
   "blog": {
     "title": "Blog & Articles",
-    "subtitle": "Tips and information about motorcycle maintenance",
+    "subtitle": "Tips and information about vapecycle maintenance",
     "readMore": "Read More",
     "back": "Back to Blog",
     "share": "Share",
@@ -107,18 +107,18 @@
     "subtitle": "Have questions or want to book? Send us a message",
     "name": "Full Name",
     "whatsapp": "WhatsApp Number",
-    "vehicle": "Motorcycle Type",
-    "service": "Service Type",
+    "vehicle": "vapecycle Type",
+    "product": "Product Type",
     "message": "Message",
     "send": "Send Message",
     "success": "Message sent successfully! We will contact you shortly.",
-    "select_service": "Select Service"
+    "select_product": "Select Product"
   },
   "footer": {
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Info",
     "followUs": "Follow Us",
     "credit": "Made with ❤️ by",
-    "copyright": "© 2026 Roma Motor. All rights reserved."
+    "copyright": "© 2026 Ocho Vape Store. All rights reserved."
   }
 }

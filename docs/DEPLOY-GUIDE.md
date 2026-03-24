@@ -1,4 +1,4 @@
-# 🚀 Panduan Deploy Lengkap — Roma Motor
+# 🚀 Panduan Deploy Lengkap — Ocho Vape Store
 
 > Panduan ini ditulis untuk pemula. Ikuti setiap langkah dengan teliti.
 
@@ -30,13 +30,13 @@ Pastikan Anda sudah memiliki:
 
 ### Langkah 2.2 — Beri Nama Spreadsheet
 1. Klik tulisan **"Untitled spreadsheet"** di pojok kiri atas
-2. Ketik: **Roma Motor Database**
+2. Ketik: **Ocho Vape Store Database**
 3. Tekan **Enter**
 
 ### Langkah 2.3 — Buat 8 Tab
 Di bagian **bawah** spreadsheet, Anda akan melihat satu tab bernama "Sheet1".
 
-1. **Klik kanan** pada tab "Sheet1" → pilih **Rename** → ketik: **services** → tekan Enter
+1. **Klik kanan** pada tab "Sheet1" → pilih **Rename** → ketik: **products** → tekan Enter
 2. Klik tanda **+** (di sebelah kiri tab) untuk membuat tab baru → beri nama: **testimonials**
 3. Ulangi untuk membuat tab: **faqs**
 4. Ulangi untuk membuat tab: **running_texts**
@@ -61,7 +61,7 @@ Untuk setiap tab, Anda perlu mengisi **header** (baris pertama) dan **data conto
 Lakukan untuk semua 8 tab:
 | Tab di Sheets | File yang di-copy |
 |---|---|
-| `services` | `docs/spreadsheet-data/services.csv` |
+| `products` | `docs/spreadsheet-data/products.csv` *(Note: Jika file bernama services.csv, gunakan itu sebagai referensi, namun tabel diubah menjadi products)*|
 | `testimonials` | `docs/spreadsheet-data/testimonials.csv` |
 | `faqs` | `docs/spreadsheet-data/faqs.csv` |
 | `running_texts` | `docs/spreadsheet-data/running_texts.csv` |
@@ -94,7 +94,7 @@ Apps Script berfungsi sebagai **jembatan** antara website dan Google Sheets. Tan
 
 ### Langkah 3.2 — Beri Nama Project
 1. Klik tulisan **"Untitled project"** di pojok kiri atas
-2. Ketik: **Roma Motor API**
+2. Ketik: **Ocho Vape API**
 3. Tekan **Enter**
 
 ### Langkah 3.3 — Hapus Code Default
@@ -131,7 +131,7 @@ Apps Script berfungsi sebagai **jembatan** antara website dan Google Sheets. Tan
 2. Di popup yang muncul, klik ikon **⚙️ (gear/roda gigi)** di sebelah "Select type"
 3. Pilih **Web app**
 4. Isi form yang muncul:
-   - **Description**: ketik `Roma Motor API v1`
+   - **Description**: ketik `Ocho Vape API v1`
    - **Execute as**: pilih **Me** (ini artinya script berjalan atas nama Anda)
    - **Who has access**: pilih **Anyone** (agar website bisa mengakses API)
 5. Klik tombol **Deploy** (biru)
@@ -144,7 +144,7 @@ Setelah klik Deploy, akan muncul popup meminta izin:
 3. ⚠️ Mungkin muncul peringatan: **"Google hasn't verified this app"**
    - Ini normal! Karena ini script buatan sendiri
    - Klik tulisan **Advanced** (di pojok kiri bawah)
-   - Klik **Go to Roma Motor API (unsafe)** (di bawah)
+   - Klik **Go to Ocho Vape API (unsafe)** (di bawah)
 4. Klik **Allow** (Izinkan)
 
 ### Langkah 3.8 — Copy URL Web App
@@ -164,7 +164,7 @@ Setelah klik Deploy, akan muncul popup meminta izin:
 
 ## 4. Setting Vercel (Hosting)
 
-Website Roma Motor di-host di Vercel. Kita perlu memberitahu Vercel alamat API dan database kita.
+Website Ocho Vape Store di-host di Vercel. Kita perlu memberitahu Vercel alamat API dan database kita.
 
 ### Langkah 4.1 — Login ke Vercel
 1. Buka browser, ketik: **vercel.com**
@@ -173,7 +173,8 @@ Website Roma Motor di-host di Vercel. Kita perlu memberitahu Vercel alamat API d
 
 ### Langkah 4.2 — Pilih Project
 1. Setelah login, Anda akan melihat daftar project
-2. Cari dan klik project **romamotor** (atau nama project Anda)
+2. Cari dan klik project **ochovape** (di repo github `saduxindonesia/ochovape`)
+3. Atau Anda dapat import repositori baru jika belum diimport.
 
 ### Langkah 4.3 — Buka Environment Variables
 1. Klik tab **Settings** (di menu atas)
@@ -182,7 +183,7 @@ Website Roma Motor di-host di Vercel. Kita perlu memberitahu Vercel alamat API d
 ### Langkah 4.4 — Tambahkan Variable Pertama
 1. Di field **Key**, ketik: `VITE_APPS_SCRIPT_URL`
 2. Di field **Value**, paste **URL Web App** dari Langkah 3.8
-   - Contoh: `https://script.google.com/macros/s/AKfycbyI4CzroYwR0YJdyiuSSxKZAi70srce_RYkAv-z_EpIRvMBD3MfUY6h5JN4OLksYYJy/exec`
+   - Contoh: `https://script.google.com/macros/s/AKfycbyI4CzroYwR0YJdyiuSSxKZAi.../exec`
 3. Di bagian **Environment**, pastikan **ketiga checkbox tercentang**:
    - ☑️ Production
    - ☑️ Preview
@@ -214,17 +215,17 @@ Environment variables baru **tidak akan aktif** sampai project di-deploy ulang.
 ## 5. Verifikasi
 
 ### Cek 1: Website Tampil Data dari Sheets
-1. Buka **bengkelroma.sadux.my.id** di browser
-2. Scroll ke bagian **Services** — harus menampilkan 8 layanan
+1. Buka **ochovape.sadux.my.id** di browser
+2. Scroll ke bagian **Products** — harus menampilkan daftar produk vape
 3. Scroll ke **Testimonials** — harus menampilkan testimoni
 4. Scroll ke **FAQ** — harus menampilkan pertanyaan & jawaban
 
 ### Cek 2: Admin Dashboard CRUD
-1. Buka **bengkelroma.sadux.my.id/sadux/login**
+1. Buka **ochovape.sadux.my.id/sadux/login**
 2. Login dengan username dan password admin
-3. Coba **tambah** layanan baru → cek di Google Sheets apakah data bertambah
-4. Coba **edit** layanan → cek di Google Sheets apakah data berubah
-5. Coba **hapus** layanan → cek di Google Sheets apakah data terhapus
+3. Coba **tambah** produk baru → cek di Google Sheets apakah data bertambah
+4. Coba **edit** produk → cek di Google Sheets apakah data berubah
+5. Coba **hapus** produk → cek di Google Sheets apakah data terhapus
 
 ### Cek 3: Contact Form
 1. Buka halaman utama → scroll ke bagian **Contact**
@@ -233,7 +234,7 @@ Environment variables baru **tidak akan aktif** sampai project di-deploy ulang.
 
 ### Cek 4: Edit via Google Sheets
 1. Buka Google Sheets
-2. Tab **services** → ubah harga salah satu layanan
+2. Tab **products** → ubah harga salah satu produk
 3. Refresh website → harga harus berubah
 
 ---
@@ -242,7 +243,7 @@ Environment variables baru **tidak akan aktif** sampai project di-deploy ulang.
 
 ### Jika Edit Code Apps Script
 Setiap kali Anda mengubah code di Apps Script, Anda **harus deploy ulang**:
-1. Buka **script.google.com** → buka project Roma Motor API
+1. Buka **script.google.com** → buka project Ocho Vape API
 2. Klik **Deploy** → **Manage deployments**
 3. Klik ikon **✏️ (pensil)** di deployment yang ada
 4. Di dropdown **Version**, pilih **New version**

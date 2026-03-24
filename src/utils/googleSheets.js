@@ -95,7 +95,7 @@ export async function replaceSheet(sheetName, data) {
 
 // ━━━ TYPE CASTING ━━━
 
-export function castServices(rows) {
+export function castProducts(rows) {
   return (rows || []).map((row) => ({
     id: Number(row.id),
     icon: row.icon || '🔧',
@@ -168,7 +168,7 @@ export function castMessages(rows) {
     name: String(row.name || ''),
     whatsapp: String(row.whatsapp || row.phone || ''),
     vehicle: String(row.vehicle || ''),
-    service: String(row.service || ''),
+    product: String(row.product || ''),
     message: String(row.message || ''),
     date: String(row.date || ''),
   }));

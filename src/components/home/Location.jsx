@@ -20,7 +20,7 @@ export default function Location() {
           <h2 className="section-title">{t('location.title')}</h2>
           <p className="section-subtitle mb-4">{t('location.subtitle')}</p>
           <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--text-body)' }}>
-            Kami bangga melayani warga <strong className="font-semibold text-primary">Desa Pasir Angin, Kecamatan Cileungsi, Kabupaten Bogor, dan sekitarnya</strong>. Dengan mekanik handal dan layanan terpercaya, kami siap mengatasi segala masalah motor Anda di bengkel terdekat ini.
+            Kami bangga melayani warga <strong className="font-semibold text-primary">Desa Pasir Angin, Kecamatan Cileungsi, Kabupaten Bogor, dan sekitarnya</strong>. Dengan vapista handal dan produk terpercaya, kami siap mengatasi segala masalah vape Anda di vape store terdekat ini.
           </p>
         </motion.div>
 
@@ -40,7 +40,7 @@ export default function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Roma Motor Location"
+              title="Ocho Vape Store Location"
             />
           </motion.div>
 

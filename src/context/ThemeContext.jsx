@@ -6,7 +6,7 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     document.documentElement.classList.add('dark');
     document.body.classList.add('dark');
-    localStorage.setItem('roma-theme', 'dark');
+    localStorage.setItem('ocho-theme', 'dark');
   }, []);
 
   return (

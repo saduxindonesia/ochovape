@@ -23,7 +23,7 @@ export default function AdminLogin() {
   return (
     <>
       <Helmet>
-        <title>Admin Login — Roma Motor</title>
+        <title>Admin Login — Ocho Vape Store</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
@@ -37,7 +37,7 @@ export default function AdminLogin() {
         <div className="relative w-full max-w-md">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-heading font-bold text-primary mb-1">
-              Roma<span className="text-white">Motor</span>
+              Ocho<span className="text-white">Vape</span>
             </h1>
             <p className="text-gray-500 text-sm">Admin Panel</p>
           </div>

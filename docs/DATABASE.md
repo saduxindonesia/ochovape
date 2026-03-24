@@ -1,4 +1,4 @@
-# 📖 Dokumentasi Database Google Sheets — Roma Motor
+# 📖 Dokumentasi Database Google Sheets — Ocho Vape Store
 
 ## Daftar Isi
 - [Arsitektur](#arsitektur)
@@ -32,19 +32,19 @@
 ### Langkah 1: Buat Spreadsheet Baru
 1. Buka [Google Sheets](https://sheets.google.com)
 2. Klik **"Blank spreadsheet"** (Spreadsheet kosong)
-3. Beri nama: `Roma Motor Database`
+3. Beri nama: `Ocho Vape Store Database`
 
 ### Langkah 2: Buat 8 Tab/Sheet
 Klik tanda **+** di bagian bawah untuk menambah tab baru. Buat **8 tab** dengan nama **persis** seperti berikut (case-sensitive):
 
 | No | Nama Tab | Fungsi |
 |----|----------|--------|
-| 1 | `services` | Daftar layanan bengkel |
+| 1 | `products` | Daftar produk vape |
 | 2 | `testimonials` | Testimoni pelanggan |
 | 3 | `faqs` | Pertanyaan yang sering ditanya |
 | 4 | `running_texts` | Teks berjalan di header |
 | 5 | `blog_posts` | Artikel blog |
-| 6 | `gallery` | Galeri foto bengkel |
+| 6 | `gallery` | Galeri foto store |
 | 7 | `settings` | Pengaturan website (key-value) |
 | 8 | `messages` | Pesan masuk dari contact form |
 
@@ -70,7 +70,7 @@ Copy bagian antara `/d/` dan `/edit` — itu adalah **Spreadsheet ID**.
 ### Langkah 1: Buat Project Baru
 1. Buka [Google Apps Script](https://script.google.com)
 2. Klik **"New Project"**
-3. Ubah nama project menjadi: `Roma Motor API`
+3. Ubah nama project menjadi: `Ocho Vape API`
 
 ### Langkah 2: Copy-Paste Code
 1. Hapus semua isi default di `Code.gs`
@@ -86,7 +86,7 @@ const SPREADSHEET_ID = '1CAr1qJyK9HwUznGlIsjQubJ0GaH6arAZRCoKVVBNEd8'; // ← ID
 1. Klik **Deploy** → **New deployment**
 2. Klik ikon ⚙️ (gear) → pilih **Web app**
 3. Isi form:
-   - **Description**: `Roma Motor API v1`
+   - **Description**: `Ocho Vape API v1`
    - **Execute as**: **Me** (akun Google Anda)
    - **Who has access**: **Anyone**
 4. Klik **Deploy**
@@ -96,7 +96,7 @@ const SPREADSHEET_ID = '1CAr1qJyK9HwUznGlIsjQubJ0GaH6arAZRCoKVVBNEd8'; // ← ID
 2. Pilih akun Google Anda
 3. Jika muncul "Google hasn't verified this app":
    - Klik **Advanced** (di kiri bawah)
-   - Klik **Go to Roma Motor API (unsafe)**
+   - Klik **Go to Ocho Vape API (unsafe)**
 4. Klik **Allow**
 
 ### Langkah 5: Copy URL
@@ -141,23 +141,23 @@ Karena project di-deploy di Vercel, Anda juga harus menambahkan environment vari
 
 ## Struktur Spreadsheet
 
-### Tab: `services`
+### Tab: `products`
 | Kolom | Tipe | Contoh | Keterangan |
 |-------|------|--------|------------|
 | `id` | Number | `1` | ID unik otomatis |
-| `icon` | String | `🛢️` | Emoji icon layanan |
-| `title` | String | `Ganti Oli` | Nama layanan |
-| `description` | String | `Oli original...` | Deskripsi layanan |
-| `price` | String | `Mulai Rp 35.000` | Harga layanan |
+| `icon` | String | `💨` | Emoji icon produk |
+| `title` | String | `Liquid Premium` | Nama produk |
+| `description` | String | `Rasa mangga...` | Deskripsi produk |
+| `price` | String | `Mulai Rp 100.000` | Harga produk |
 
 ### Tab: `testimonials`
 | Kolom | Tipe | Contoh | Keterangan |
 |-------|------|--------|------------|
 | `id` | Number | `1` | ID unik |
 | `name` | String | `Ahmad` | Nama pelanggan |
-| `vehicle` | String | `Honda Vario` | Jenis motor |
+| `vehicle` | String | `Vape Mod X` | Jenis device (opsional) |
 | `rating` | Number | `5` | Rating 1-5 |
-| `text` | String | `Bengkel terbaik...` | Isi testimoni |
+| `text` | String | `Store terbaik...` | Isi testimoni |
 | `avatar` | String | (URL) | URL foto (opsional) |
 
 ### Tab: `faqs`
@@ -171,18 +171,18 @@ Karena project di-deploy di Vercel, Anda juga harus menambahkan environment vari
 | Kolom | Tipe | Contoh | Keterangan |
 |-------|------|--------|------------|
 | `id` | Number | `1` | ID unik |
-| `text` | String | `🔧 Promo...` | Teks berjalan |
+| `text` | String | `💨 Promo...` | Teks berjalan |
 | `active` | Boolean | `TRUE` | Aktif/nonaktif |
 
 ### Tab: `blog_posts`
 | Kolom | Tipe | Contoh | Keterangan |
 |-------|------|--------|------------|
 | `id` | Number | `1` | ID unik |
-| `title` | String | `Cara Merawat...` | Judul artikel |
-| `slug` | String | `cara-merawat-motor` | URL slug |
+| `title` | String | `Cara Memilih...`| Judul artikel |
+| `slug` | String | `cara-memilih-liquid` | URL slug |
 | `thumbnail` | String | (URL) | URL gambar (opsional) |
 | `date` | String | `2026-03-10` | Format YYYY-MM-DD |
-| `tags` | String | `tips,matic` | Pisahkan dengan koma |
+| `tags` | String | `tips,vape` | Pisahkan dengan koma |
 | `content` | String | `Isi artikel...` | Konten artikel |
 
 ### Tab: `gallery`
@@ -190,13 +190,13 @@ Karena project di-deploy di Vercel, Anda juga harus menambahkan environment vari
 |-------|------|--------|------------|
 | `id` | Number | `1` | ID unik |
 | `url` | String | (URL) | URL gambar |
-| `caption` | String | `Suasana bengkel` | Caption foto |
+| `caption` | String | `Suasana store` | Caption foto |
 
 ### Tab: `settings`
 | Kolom | Tipe | Contoh | Keterangan |
 |-------|------|--------|------------|
 | `key` | String | `shopName` | Nama pengaturan |
-| `value` | String | `Roma Motor` | Nilai pengaturan |
+| `value` | String | `Ocho Vape Store` | Nilai pengaturan |
 
 **Key yang tersedia:** `shopName`, `tagline`, `address`, `phone`, `whatsapp`, `email`, `instagram`, `tiktok`, `operatingHours`, `mapEmbedUrl`
 
@@ -206,9 +206,9 @@ Karena project di-deploy di Vercel, Anda juga harus menambahkan environment vari
 | `id` | Number | `1742...` | Timestamp ID |
 | `name` | String | `John` | Nama pengirim |
 | `whatsapp` | String | `0812...` | Nomor WA |
-| `vehicle` | String | `Honda Beat` | Jenis motor |
-| `service` | String | `Ganti Oli` | Layanan dipilih |
-| `message` | String | `Mau booking...` | Isi pesan |
+| `vehicle` | String | `Vape Pod` | Jenis device (opsional) |
+| `service` | String | `Liquid` | Produk/layanan dipilih |
+| `message` | String | `Mau order...` | Isi pesan |
 | `date` | String | `2026-03-24T...` | ISO timestamp |
 
 ---
@@ -222,7 +222,7 @@ https://script.google.com/macros/s/{DEPLOYMENT_ID}/exec
 
 ### GET — Baca Data
 ```
-GET ?sheet=services     → Ambil semua services
+GET ?sheet=products     → Ambil semua products
 GET ?sheet=testimonials → Ambil semua testimonials
 GET (tanpa parameter)   → Ambil SEMUA data dari semua tab
 ```
@@ -230,13 +230,13 @@ GET (tanpa parameter)   → Ambil SEMUA data dari semua tab
 ### POST — Tulis Data
 ```json
 // Tambah baris baru
-{ "action": "add", "sheet": "services", "data": { "icon": "🔧", "title": "...", ... } }
+{ "action": "add", "sheet": "products", "data": { "icon": "💨", "title": "...", ... } }
 
 // Update baris
-{ "action": "update", "sheet": "services", "id": 1, "data": { "title": "Judul Baru" } }
+{ "action": "update", "sheet": "products", "id": 1, "data": { "title": "Judul Baru" } }
 
 // Hapus baris
-{ "action": "delete", "sheet": "services", "id": 1 }
+{ "action": "delete", "sheet": "products", "id": 1 }
 
 // Replace semua (untuk settings)
 { "action": "replace", "sheet": "settings", "data": [{ "key": "shopName", "value": "..." }] }

@@ -48,7 +48,7 @@ export default function TestimonialsManager() {
               <button onClick={() => setEditing(null)} className="text-gray-400 hover:text-white"><FiX className="w-5 h-5" /></button>
             </div>
             <input value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Nama pelanggan" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
-            <input value={form.vehicle} onChange={(e) => setForm({ ...form, vehicle: e.target.value })} placeholder="Jenis motor" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
+            <input value={form.vehicle} onChange={(e) => setForm({ ...form, vehicle: e.target.value })} placeholder="Jenis vape" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
             <div className="flex items-center gap-1">
               <span className="text-gray-400 text-sm mr-2">Rating:</span>
               {[1, 2, 3, 4, 5].map((n) => (

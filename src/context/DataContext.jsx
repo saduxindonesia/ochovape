@@ -2,12 +2,12 @@ import { createContext, useContext, useState, useEffect, useCallback } from 'rea
 import {
   fetchAllData,
   addRow, updateRow, deleteRow, replaceSheet,
-  castServices, castTestimonials, castFaqs,
+  castProducts, castTestimonials, castFaqs,
   castRunningTexts, castBlogPosts, castGallery,
   castSettings, castMessages,
 } from '../utils/googleSheets';
 import {
-  defaultServices,
+  defaultProducts,
   defaultTestimonials,
   defaultFAQs,
   defaultRunningTexts,
@@ -20,7 +20,7 @@ import {
 const DataContext = createContext();
 
 export function DataProvider({ children }) {
-  const [services, setServices] = useState(defaultServices);
+  const [products, setProducts] = useState(defaultProducts);
   const [testimonials, setTestimonials] = useState(defaultTestimonials);
   const [faqs, setFaqs] = useState(defaultFAQs);
   const [runningTexts, setRunningTexts] = useState(defaultRunningTexts);
@@ -40,7 +40,7 @@ export function DataProvider({ children }) {
       const raw = await fetchAllData();
       if (!raw) { setLoading(false); return; }
 
-      if (raw.services) setServices(castServices(raw.services));
+      if (raw.products) setProducts(castProducts(raw.products));
       if (raw.testimonials) setTestimonials(castTestimonials(raw.testimonials));
       if (raw.faqs) setFaqs(castFaqs(raw.faqs));
       if (raw.running_texts) setRunningTexts(castRunningTexts(raw.running_texts));
@@ -74,20 +74,20 @@ export function DataProvider({ children }) {
   };
 
   // ━━━ SERVICES CRUD ━━━
-  const addService = (data) => withSaving(async () => {
+  const addProduct = (data) => withSaving(async () => {
     const item = { ...data, id: Date.now() };
-    await addRow('services', item);
-    setServices((prev) => [...prev, item]);
+    await addRow('products', item);
+    setProducts((prev) => [...prev, item]);
   });
 
-  const updateService = (id, data) => withSaving(async () => {
-    await updateRow('services', id, data);
-    setServices((prev) => prev.map((s) => (s.id === id ? { ...s, ...data } : s)));
+  const updateProduct = (id, data) => withSaving(async () => {
+    await updateRow('products', id, data);
+    setProducts((prev) => prev.map((s) => (s.id === id ? { ...s, ...data } : s)));
   });
 
-  const deleteService = (id) => withSaving(async () => {
-    await deleteRow('services', id);
-    setServices((prev) => prev.filter((s) => s.id !== id));
+  const deleteProduct = (id) => withSaving(async () => {
+    await deleteRow('products', id);
+    setProducts((prev) => prev.filter((s) => s.id !== id));
   });
 
   // ━━━ TESTIMONIALS CRUD ━━━
@@ -201,15 +201,15 @@ export function DataProvider({ children }) {
   // ━━━ CONTEXT VALUE ━━━
   const value = {
     // Data
-    services, testimonials, faqs, runningTexts,
+    products, testimonials, faqs, runningTexts,
     blogPosts, gallery, settings, messages,
 
     // State
     loading, saving, error,
     refreshData: loadData,
 
-    // Services CRUD
-    addService, updateService, deleteService,
+    // Products CRUD
+    addProduct, updateProduct, deleteProduct,
 
     // Testimonials CRUD
     addTestimonial, updateTestimonial, deleteTestimonial,

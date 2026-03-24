@@ -2,12 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
 import { motion } from 'framer-motion';
 
-export default function Services() {
+export default function Products() {
   const { t } = useTranslation();
-  const { services } = useData();
+  const { products } = useData();
 
   return (
-    <section id="services" className="py-20 md:py-28 relative">
+    <section id="products" className="py-20 md:py-28 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
 
@@ -19,13 +19,13 @@ export default function Services() {
           viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">{t('services.title')}</h2>
-          <p className="section-subtitle">{t('services.subtitle')}</p>
+          <h2 className="section-title">{t('products.title')}</h2>
+          <p className="section-subtitle">{t('products.subtitle')}</p>
         </motion.div>
 
-        {/* Services grid */}
+        {/* Products grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {services.map((service, index) => (
+          {products.map((product, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -40,21 +40,21 @@ export default function Services() {
 
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="text-3xl md:text-4xl mb-4">{service.icon}</div>
+                <div className="text-3xl md:text-4xl mb-4">{product.icon}</div>
 
                 {/* Title */}
                 <h3 className="text-base md:text-lg font-heading font-bold mb-2 group-hover:text-primary transition-colors" style={{ color: 'var(--text-heading)' }}>
-                  {service.title}
+                  {product.title}
                 </h3>
 
                 {/* Description */}
                 <p className="text-xs md:text-sm leading-relaxed mb-3 line-clamp-3" style={{ color: 'var(--text-body)' }}>
-                  {service.description}
+                  {product.description}
                 </p>
 
                 {/* Price */}
                 <div className="text-gray-300 font-heading font-semibold text-sm">
-                  {service.price}
+                  {product.price}
                 </div>
               </div>
             </motion.div>
@@ -68,7 +68,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center text-gray-500 text-sm mt-10"
         >
-          {t('services.note')}
+          {t('products.note')}
         </motion.p>
       </div>
     </section>

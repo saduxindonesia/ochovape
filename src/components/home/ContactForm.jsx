@@ -7,13 +7,13 @@ import { FaWhatsapp, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 export default function ContactForm() {
   const { t } = useTranslation();
-  const { settings, services, addMessage } = useData();
+  const { settings, products, addMessage } = useData();
   const [success, setSuccess] = useState(false);
   const [form, setForm] = useState({
     name: '',
     whatsapp: '',
     vehicle: '',
-    service: '',
+    product: '',
     message: '',
   });
 
@@ -29,7 +29,7 @@ export default function ContactForm() {
     try {
       await addMessage(form);
       setSuccess(true);
-      setForm({ name: '', whatsapp: '', vehicle: '', service: '', message: '' });
+      setForm({ name: '', whatsapp: '', vehicle: '', product: '', message: '' });
       setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
       console.error('Failed to send message:', err);
@@ -93,14 +93,14 @@ export default function ContactForm() {
                   className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm"
                 />
                 <select
-                  name="service"
-                  value={form.service}
+                  name="product"
+                  value={form.product}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm appearance-none"
                 >
-                  <option value="" className="bg-dark-card">{t('contact.select_service')}</option>
-                  {services.map((s) => (
+                  <option value="" className="bg-dark-card">{t('contact.select_product')}</option>
+                  {products.map((s) => (
                     <option key={s.id} value={s.title} className="bg-dark-card">{s.title}</option>
                   ))}
                 </select>

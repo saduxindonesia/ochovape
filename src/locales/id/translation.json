@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Beranda",
-    "services": "Layanan",
+    "products": "Produk",
     "about": "Tentang Kami",
     "gallery": "Galeri",
     "testimonials": "Testimoni",
@@ -11,79 +11,79 @@
     "booking": "Booking Sekarang"
   },
   "hero": {
-    "headline": "Bengkel Motor Terpercaya & Terdekat di Pasir Angin, Cileungsi",
-    "subheadline": "Mekanik handal siap melayani servis & perbaikan untuk semua jenis motor dengan harga termurah.",
+    "headline": "vape store Terpercaya & Terdekat di Pasir Angin, Cileungsi",
+    "subheadline": "vapista handal siap melayani belanja & perbaikan untuk semua jenis vape dengan harga termurah.",
     "cta_wa": "Hubungi Kami via WhatsApp",
-    "cta_services": "Lihat Layanan Kami",
+    "cta_products": "Lihat Produk Kami",
     "badge": "4.9/5 Rating | 500+ Pelanggan Puas",
     "stat_years": "Tahun Pengalaman",
-    "stat_guarantee": "Garansi Service",
+    "stat_guarantee": "Garansi Product",
     "stat_customers": "Pelanggan Puas"
   },
-  "services": {
-    "title": "Layanan Kami",
-    "subtitle": "Melayani Semua Jenis Sepeda Motor",
-    "note": "Melayani semua jenis sepeda motor (Matic, Bebek, Sport, dll)"
+  "products": {
+    "title": "Produk Kami",
+    "subtitle": "Melayani Semua Jenis Sepeda vape",
+    "note": "Melayani semua jenis sepeda vape (Matic, Bebek, Sport, dll)"
   },
   "whyUs": {
-    "title": "Mengapa Memilih Layanan Kami?",
-    "subtitle": "Kami berkomitmen memberikan layanan terbaik untuk motor warga Cileungsi",
+    "title": "Mengapa Memilih Produk Kami?",
+    "subtitle": "Kami berkomitmen memberikan produk terbaik untuk vape warga Cileungsi",
     "experience": "Tahun Pengalaman",
-    "customers": "Motor Diservis",
-    "mechanics": "Mekanik Ahli",
-    "point1_title": "Mekanik Handal & Berpengalaman",
-    "point1_desc": "Tim mekanik kami terlatih dan bersertifikat mengatasi semua masalah motor",
+    "customers": "vape Dibelanja",
+    "mechanics": "vapista Ahli",
+    "point1_title": "vapista Handal & Berpengalaman",
+    "point1_desc": "Tim vapista kami terlatih dan bersertifikat mengatasi semua masalah vape",
     "point2_title": "Suku Cadang Asli & Terlengkap",
-    "point2_desc": "Menyediakan spare part original untuk berbagai merk motor",
+    "point2_desc": "Menyediakan liquid/mod original untuk berbagai merk vape",
     "point3_title": "Harga Termurah & Transparan",
     "point3_desc": "Tanpa biaya tersembunyi, estimasi biaya disepakati di awal"
   },
-  "servicesData": [
-    { "icon": "🛢️", "title": "Ganti Oli", "description": "Oli original dari berbagai merk ternama. Pergantian oli berkala untuk menjaga performa mesin motor Anda tetap optimal.", "price": "Mulai Rp 35.000" },
-    { "icon": "🔧", "title": "Tune Up", "description": "Cek & setel mesin menyeluruh agar performa motor optimal. Termasuk pengecekan busi, karburator, dan sistem pembakaran.", "price": "Mulai Rp 50.000" },
-    { "icon": "🛒", "title": "Sparepart", "description": "Jual spare part original & aftermarket berkualitas untuk semua jenis motor. Garansi resmi tersedia.", "price": "Harga Bervariasi" },
-    { "icon": "⚙️", "title": "Service Berkala", "description": "Service ringan & berkala untuk semua merk motor. Mekanik berpengalaman dengan peralatan modern.", "price": "Mulai Rp 75.000" },
+  "productsData": [
+    { "icon": "🛢️", "title": "Ganti Oli", "description": "Oli original dari berbagai merk ternama. Pergantian oli berkala untuk menjaga performa mesin vape Anda tetap optimal.", "price": "Mulai Rp 35.000" },
+    { "icon": "🔧", "title": "Tune Up", "description": "Cek & setel mesin menyeluruh agar performa vape optimal. Termasuk pengecekan busi, karburator, dan sistem pembakaran.", "price": "Mulai Rp 50.000" },
+    { "icon": "🛒", "title": "Sparepart", "description": "Jual liquid/mod original & aftermarket berkualitas untuk semua jenis vape. Garansi resmi tersedia.", "price": "Harga Bervariasi" },
+    { "icon": "⚙️", "title": "Product Berkala", "description": "Product ringan & berkala untuk semua merk vape. vapista berpengalaman dengan peralatan modern.", "price": "Mulai Rp 75.000" },
     { "icon": "🛞", "title": "Tambal Ban", "description": "Tambal ban tubeless & ban dalam dengan cepat. Tersedia juga penggantian ban baru berbagai ukuran.", "price": "Mulai Rp 15.000" },
-    { "icon": "🏗️", "title": "Turun Mesin", "description": "Overhaul mesin total oleh mekanik ahli. Solusi tepat untuk motor yang sudah kehilangan performa.", "price": "Mulai Rp 500.000" },
+    { "icon": "🏗️", "title": "Turun Mesin", "description": "Overhaul mesin total oleh vapista ahli. Solusi tepat untuk vape yang sudah kehilangan performa.", "price": "Mulai Rp 500.000" },
     { "icon": "🚀", "title": "BoreUp", "description": "Upgrade kapasitas mesin untuk performa lebih bertenaga. Dikerjakan oleh spesialis bore up berpengalaman.", "price": "Mulai Rp 800.000" },
     { "icon": "🔋", "title": "Kelistrikan", "description": "Perbaikan sistem kelistrikan & injection. Diagnosa akurat dengan alat scanner modern.", "price": "Mulai Rp 50.000" }
   ],
   "runningTextsData": [
     "🔧 Promo Ganti Oli Gratis Cek Mesin!",
     "📞 Booking Online Sekarang — Tanpa Antri!",
-    "🏆 Bengkel Terpercaya Sejak 2015",
-    "⚡ Service Express 30 Menit!",
-    "🛡️ Garansi Service & Spare Part Original"
+    "🏆 Vape Store Terpercaya Sejak 2015",
+    "⚡ Product Express 30 Menit!",
+    "🛡️ Garansi Product & liquid/mod Original"
   ],
   "faqsData": [
-    { "question": "Apakah ini bengkel motor terdekat dari perumahan di Pasir Angin, Cileungsi?", "answer": "Ya, lokasi Roma Motor sangat strategis di Desa Pasir Angin, Cileungsi. Kami adalah pilihan bengkel terdekat bagi warga sekitar yang membutuhkan penanganan cepat dan terpercaya untuk motor yang mogok atau butuh servis berkala." },
-    { "question": "Mengapa Roma Motor dikenal sebagai bengkel motor dengan tarif termurah namun tetap terpercaya?", "answer": "Kami percaya kualitas tinggi tidak harus mahal. Roma Motor selalu memberikan estimasi biaya transparan di awal, menggunakan suku cadang asli tanpa mark-up berlebihan, dan memastikan setiap perbaikan sesuai dengan kerusakan sehingga harga termurah dan tetap terpercaya." },
-    { "question": "Apakah mekanik di sini bisa menangani turun mesin dan perbaikan berat?", "answer": "Tentu saja. Kami memiliki mekanik handal dan berpengalaman yang spesialis dalam menangani perbaikan berat, termasuk turun mesin, bore up, dan masalah kelistrikan kompleks. Diagnosa dilakukan secara akurat untuk hasil yang memuaskan." },
-    { "question": "Apakah bisa booking online atau memanggil mekanik?", "answer": "Anda bisa booking jadwal servis secara online melalui tombol WhatsApp kami. Untuk panggilan darurat di sekitar Cileungsi, silakan hubungi kami agar mekanik terdekat kami bisa membantu pengecekan awal." },
-    { "question": "Apakah ada garansi service dan spare part?", "answer": "Tentu. Setiap servis dan pemasangan suku cadang di bengkel kami disertai dengan garansi. Kami menggunakan spare part original maupun aftermarket berkualitas pilihan mekanik handal kami untuk keamanan Anda." }
+    { "question": "Apakah ini vape store terdekat dari perumahan di Pasir Angin, Cileungsi?", "answer": "Ya, lokasi Ocho Vape Store sangat strategis di Desa Pasir Angin, Cileungsi. Kami adalah pilihan vape store terdekat bagi warga sekitar yang membutuhkan penanganan cepat dan terpercaya untuk vape yang mogok atau butuh belanja berkala." },
+    { "question": "Mengapa Ocho Vape Store dikenal sebagai vape store dengan tarif termurah namun tetap terpercaya?", "answer": "Kami percaya kualitas tinggi tidak harus mahal. Ocho Vape Store selalu memberikan estimasi biaya transparan di awal, menggunakan suku cadang asli tanpa mark-up berlebihan, dan memastikan setiap perbaikan sesuai dengan kerusakan sehingga harga termurah dan tetap terpercaya." },
+    { "question": "Apakah vapista di sini bisa menangani turun mesin dan perbaikan berat?", "answer": "Tentu saja. Kami memiliki vapista handal dan berpengalaman yang spesialis dalam menangani perbaikan berat, termasuk turun mesin, bore up, dan masalah kelistrikan kompleks. Diagnosa dilakukan secara akurat untuk hasil yang memuaskan." },
+    { "question": "Apakah bisa booking online atau memanggil vapista?", "answer": "Anda bisa booking jadwal belanja secara online melalui tombol WhatsApp kami. Untuk panggilan darurat di sekitar Cileungsi, silakan hubungi kami agar vapista terdekat kami bisa membantu pengecekan awal." },
+    { "question": "Apakah ada garansi product dan liquid/mod?", "answer": "Tentu. Setiap belanja dan pemasangan suku cadang di vape store kami disertai dengan garansi. Kami menggunakan liquid/mod original maupun aftermarket berkualitas pilihan vapista handal kami untuk keamanan Anda." }
   ],
   "blogData": [
-    { "title": "Cara Merawat Motor Matic Agar Awet", "summary": "Rutin ganti oli, periksa V-Belt secara berkala, dan pastikan tekanan ban selalu sesuai standar agar motor matic Anda tetap awet dan performanya optimal.", "tags": ["tips", "matic", "perawatan"] },
-    { "title": "Tanda-Tanda Motor Harus Ganti Oli", "summary": "Suara mesin kasar, tenaga motor berkurang, dan warna oli yang sudah hitam pekat adalah tanda-tanda jelas motor Anda harus segera ganti oli.", "tags": ["tips", "oli", "perawatan"] },
-    { "title": "Tips Memilih Spare Part Original vs Aftermarket", "summary": "Untuk komponen kritis seperti piston dan kampas rem, gunakan spare part original. Untuk aksesoris, aftermarket berkualitas bisa menjadi alternatif yang baik.", "tags": ["sparepart", "tips"] }
+    { "title": "Cara Merawat vape Matic Agar Awet", "summary": "Rutin ganti oli, periksa V-Belt secara berkala, dan pastikan tekanan ban selalu sesuai standar agar vape matic Anda tetap awet dan performanya optimal.", "tags": ["tips", "matic", "perawatan"] },
+    { "title": "Tanda-Tanda vape Harus Ganti Oli", "summary": "Suara mesin kasar, tenaga vape berkurang, dan warna oli yang sudah hitam pekat adalah tanda-tanda jelas vape Anda harus segera ganti oli.", "tags": ["tips", "oli", "perawatan"] },
+    { "title": "Tips Memilih liquid/mod Original vs Aftermarket", "summary": "Untuk komponen kritis seperti piston dan kampas rem, gunakan liquid/mod original. Untuk aksesoris, aftermarket berkualitas bisa menjadi alternatif yang baik.", "tags": ["sparepart", "tips"] }
   ],
   "testimonialsData": [
-    { "name": "Ahmad Rizky", "vehicle": "Honda Vario 160", "text": "Bengkel terbaik di Pasir Angin! Service di Roma Motor selalu puas, mekaniknya ramah, harga transparan, dan motor langsung terasa enteng. Recommended banget!" },
-    { "name": "Dewi Sartika", "vehicle": "Yamaha NMAX", "text": "Mekanik handalnya beneran jago menganalisa masalah motor. Spare part original dan harganya jujur, paling murah se-Cileungsi untuk ukuran pelayanan semewah ini." },
-    { "name": "Budi Santoso", "vehicle": "Local Guide", "text": "Baru pertama kali servis ke sini cari di Google Maps karena mogok dekat perumahan. Hasilnya mantul, pengerjaan cepat banget, alatnya modern dan bergaransi." },
-    { "name": "Rina Permata", "vehicle": "Yamaha Aerox", "text": "Turun mesin motor saya dikerjakan dengan sangat rapi dan teliti. Hasilnya mesin kembali seperti baru. Sukses terus Roma Motor!" },
-    { "name": "Fajar Nugroho", "vehicle": "Local Guide", "text": "Pelayanan prima. Ada edukasi perbaikan dari mekaniknya sebelum suku cadang diganti, jadi ga merasa dibohongi. Sangat recommended buat warga Bogor." }
+    { "name": "Ahmad Rizky", "vehicle": "Honda Vario 160", "text": "Vape Store terbaik di Pasir Angin! Product di Ocho Vape Store selalu puas, vapistanya ramah, harga transparan, dan vape langsung terasa enteng. Recommended banget!" },
+    { "name": "Dewi Sartika", "vehicle": "Yamaha NMAX", "text": "vapista handalnya beneran jago menganalisa masalah vape. liquid/mod original dan harganya jujur, paling murah se-Cileungsi untuk ukuran peproduk semewah ini." },
+    { "name": "Budi Santoso", "vehicle": "Local Guide", "text": "Baru pertama kali belanja ke sini cari di Google Maps karena mogok dekat perumahan. Hasilnya mantul, pengerjaan cepat banget, alatnya modern dan bergaransi." },
+    { "name": "Rina Permata", "vehicle": "Yamaha Aerox", "text": "Turun mesin vape saya dikerjakan dengan sangat rapi dan teliti. Hasilnya mesin kembali seperti baru. Sukses terus Ocho Vape Store!" },
+    { "name": "Fajar Nugroho", "vehicle": "Local Guide", "text": "Peproduk prima. Ada edukasi perbaikan dari vapistanya sebelum suku cadang diganti, jadi ga merasa dibohongi. Sangat recommended buat warga Bogor." }
   ],
   "gallery": {
-    "title": "Galeri Bengkel",
-    "subtitle": "Lihat suasana bengkel dan proses kerja kami"
+    "title": "Galeri Vape Store",
+    "subtitle": "Lihat suasana vape store dan proses kerja kami"
   },
   "testimonials": {
     "title": "Testimoni Pelanggan",
     "subtitle": "Apa kata pelanggan kami yang puas"
   },
   "location": {
-    "title": "Lokasi Bengkel",
+    "title": "Lokasi Vape Store",
     "subtitle": "Temukan kami di Google Maps",
     "address": "Alamat",
     "hours": "Jam Operasional",
@@ -92,11 +92,11 @@
   },
   "faq": {
     "title": "Pertanyaan yang Sering Diajukan",
-    "subtitle": "Temukan jawaban untuk pertanyaan umum seputar layanan kami"
+    "subtitle": "Temukan jawaban untuk pertanyaan umum seputar produk kami"
   },
   "blog": {
     "title": "Blog & Artikel",
-    "subtitle": "Tips dan informasi seputar perawatan motor",
+    "subtitle": "Tips dan informasi seputar perawatan vape",
     "readMore": "Baca Selengkapnya",
     "back": "Kembali ke Blog",
     "share": "Bagikan",
@@ -107,18 +107,18 @@
     "subtitle": "Ada pertanyaan atau ingin booking? Kirim pesan kepada kami",
     "name": "Nama Lengkap",
     "whatsapp": "Nomor WhatsApp",
-    "vehicle": "Jenis Motor",
-    "service": "Jenis Layanan",
+    "vehicle": "Jenis vape",
+    "product": "Jenis Produk",
     "message": "Pesan",
     "send": "Kirim Pesan",
     "success": "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.",
-    "select_service": "Pilih Layanan"
+    "select_product": "Pilih Produk"
   },
   "footer": {
     "quickLinks": "Link Cepat",
     "contactInfo": "Info Kontak",
     "followUs": "Ikuti Kami",
     "credit": "Dibuat dengan ❤️ oleh",
-    "copyright": "© 2026 Roma Motor. All rights reserved."
+    "copyright": "© 2026 Ocho Vape Store. All rights reserved."
   }
 }

@@ -9,7 +9,7 @@ export default function Footer() {
 
   const quickLinks = [
     { label: t('nav.home'), href: '#hero' },
-    { label: t('nav.services'), href: '#services' },
+    { label: t('nav.products'), href: '#products' },
     { label: t('nav.gallery'), href: '#gallery' },
     { label: t('nav.testimonials'), href: '#testimonials' },
     { label: t('nav.faq'), href: '#faq' },
@@ -29,7 +29,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-heading font-bold text-primary mb-2">
-              Roma<span className="text-white">Motor</span>
+              Ocho<span className="text-white">Vape</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">{settings.tagline}</p>
             <div className="flex items-center gap-3 mt-4">
@@ -112,7 +112,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">{settings.operatingHours}</p>
             <div className="mt-4">
               <a
-                href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
+                href={`https://wa.me/${settings.whatsapp}?text=Halo Ocho Vape Store, saya ingin booking product`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary !py-2 !px-4 !text-sm inline-block"

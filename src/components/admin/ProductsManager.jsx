@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useData } from '../../context/DataContext';
 import { FiPlus, FiEdit2, FiTrash2, FiX, FiSave, FiLoader } from 'react-icons/fi';
 
-export default function ServicesManager() {
-  const { services, addService, updateService, deleteService, saving } = useData();
+export default function ProductsManager() {
+  const { products, addProduct, updateProduct, deleteProduct, saving } = useData();
   const [editing, setEditing] = useState(null);
   const [form, setForm] = useState({ icon: '', title: '', description: '', price: '' });
 
@@ -21,9 +21,9 @@ export default function ServicesManager() {
     if (!form.title.trim()) return;
     try {
       if (editing === 'new') {
-        await addService(form);
+        await addProduct(form);
       } else {
-        await updateService(editing, form);
+        await updateProduct(editing, form);
       }
       setEditing(null);
     } catch (err) {
@@ -32,9 +32,9 @@ export default function ServicesManager() {
   };
 
   const remove = async (id) => {
-    if (!window.confirm('Hapus layanan ini?')) return;
+    if (!window.confirm('Hapus produk ini?')) return;
     try {
-      await deleteService(id);
+      await deleteProduct(id);
     } catch (err) {
       alert('Gagal menghapus: ' + err.message);
     }
@@ -43,7 +43,7 @@ export default function ServicesManager() {
   return (
     <div className="space-y-6">
       <button onClick={openNew} className="btn-primary !py-2 !px-4 flex items-center gap-2">
-        <FiPlus className="w-4 h-4" /> Tambah Layanan
+        <FiPlus className="w-4 h-4" /> Tambah Produk
       </button>
 
       {/* Edit Modal */}
@@ -52,14 +52,14 @@ export default function ServicesManager() {
           <div className="bg-dark-card rounded-2xl border border-white/10 p-6 w-full max-w-md space-y-4" onClick={(e) => e.stopPropagation()}>
             <div className="flex items-center justify-between">
               <h3 className="text-white font-heading font-semibold">
-                {editing === 'new' ? 'Tambah Layanan' : 'Edit Layanan'}
+                {editing === 'new' ? 'Tambah Produk' : 'Edit Produk'}
               </h3>
               <button onClick={() => setEditing(null)} className="text-gray-400 hover:text-white">
                 <FiX className="w-5 h-5" />
               </button>
             </div>
             <input value={form.icon} onChange={(e) => setForm({ ...form, icon: e.target.value })} placeholder="Icon (emoji)" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
-            <input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="Judul layanan" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
+            <input value={form.title} onChange={(e) => setForm({ ...form, title: e.target.value })} placeholder="Judul produk" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
             <textarea value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} placeholder="Deskripsi" rows={3} className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary resize-none" />
             <input value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value })} placeholder="Harga (contoh: Mulai Rp 35.000)" className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-primary" />
             <button onClick={save} disabled={saving} className="btn-primary w-full !py-2.5 flex items-center justify-center gap-2 disabled:opacity-50">
@@ -72,7 +72,7 @@ export default function ServicesManager() {
 
       {/* List */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {services.map((svc) => (
+        {products.map((svc) => (
           <div key={svc.id} className="p-4 rounded-xl bg-dark-card border border-white/5 flex items-start justify-between">
             <div className="flex items-start gap-3 flex-1 min-w-0">
               <span className="text-2xl">{svc.icon}</span>

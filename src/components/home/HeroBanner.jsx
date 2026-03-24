@@ -68,7 +68,7 @@ export default function HeroBanner() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6"
         >
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Bengkel Motor Terpercaya & Terdekat</span>
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">vape store Terpercaya & Terdekat</span>
           <span className="gradient-text block text-2xl sm:text-3xl md:text-4xl mt-3">di Pasir Angin, Cileungsi</span>
         </motion.h1>
 
@@ -90,7 +90,7 @@ export default function HeroBanner() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
+            href={`https://wa.me/${settings.whatsapp}?text=Halo Ocho Vape Store, saya ingin booking product`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackClick('whatsapp')}
@@ -100,11 +100,11 @@ export default function HeroBanner() {
             {t('hero.cta_wa')}
           </a>
           <a
-            href="#services"
-            onClick={(e) => handleScroll(e, '#services')}
+            href="#products"
+            onClick={(e) => handleScroll(e, '#products')}
             className="btn-outline !px-8 !py-4 !text-base sm:!text-lg w-full sm:w-auto text-center"
           >
-            {t('hero.cta_services')}
+            {t('hero.cta_products')}
           </a>
         </motion.div>
 
@@ -117,7 +117,7 @@ export default function HeroBanner() {
         >
           {[
             { value: '10+', label: t('hero.stat_years') || 'Tahun Pengalaman' },
-            { value: '100%', label: t('hero.stat_guarantee') || 'Garansi Service' },
+            { value: '100%', label: t('hero.stat_guarantee') || 'Garansi Product' },
             { value: 'Ribuan', label: t('hero.stat_customers') || 'Pelanggan Puas' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

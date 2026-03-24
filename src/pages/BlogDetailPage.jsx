@@ -40,7 +40,7 @@ export default function BlogDetailPage() {
   return (
     <>
       <Helmet>
-        <title>{post.title} — Roma Motor Blog</title>
+        <title>{post.title} — Ocho Vape Store Blog</title>
         <meta name="description" content={post.content?.substring(0, 160)} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.content?.substring(0, 160)} />
@@ -51,7 +51,7 @@ export default function BlogDetailPage() {
             "@type": "BlogPosting",
             "headline": post.title,
             "datePublished": post.date,
-            "author": { "@type": "Organization", "name": "Roma Motor" },
+            "author": { "@type": "Organization", "name": "Ocho Vape Store" },
           })}
         </script>
       </Helmet>

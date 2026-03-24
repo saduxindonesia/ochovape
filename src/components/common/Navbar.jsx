@@ -7,7 +7,7 @@ import { trackClick } from '../../utils/analytics';
 
 const navLinks = [
   { key: 'home', href: '#hero' },
-  { key: 'services', href: '#services' },
+  { key: 'products', href: '#products' },
   { key: 'about', href: '#why-us' },
   { key: 'gallery', href: '#gallery' },
   { key: 'testimonials', href: '#testimonials' },
@@ -36,7 +36,7 @@ export default function Navbar() {
   const toggleLang = () => {
     const newLang = i18n.language === 'id' ? 'en' : 'id';
     i18n.changeLanguage(newLang);
-    localStorage.setItem('roma-lang', newLang);
+    localStorage.setItem('ocho-lang', newLang);
   };
 
   const handleNavClick = (e, href) => {
@@ -59,7 +59,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '#hero')}>
             <span className="text-2xl font-heading font-bold text-primary group-hover:text-accent transition-colors">
-              Roma<span className="text-white">Motor</span>
+              Ocho<span className="text-white">Vape</span>
             </span>
           </a>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
               <span className="uppercase font-medium">{i18n.language}</span>
             </button>
             <a
-              href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
+              href={`https://wa.me/${settings.whatsapp}?text=Halo Ocho Vape Store, saya ingin booking product`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackClick('whatsapp')}
@@ -144,7 +144,7 @@ export default function Navbar() {
                 </button>
               </div>
               <a
-                href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
+                href={`https://wa.me/${settings.whatsapp}?text=Halo Ocho Vape Store, saya ingin booking product`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => { trackClick('whatsapp'); setMobileOpen(false); }}

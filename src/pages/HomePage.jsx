@@ -5,7 +5,7 @@ import WhatsAppFloat from '../components/common/WhatsAppFloat';
 import ScrollToTop from '../components/common/ScrollToTop';
 import HeroBanner from '../components/home/HeroBanner';
 import RunningText from '../components/home/RunningText';
-import Services from '../components/home/Services';
+import Products from '../components/home/Products';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import Gallery from '../components/home/Gallery';
 import Testimonials from '../components/home/Testimonials';
@@ -18,24 +18,24 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Roma Motor — Bengkel & Service Motor Terpercaya</title>
+        <title>Ocho Vape Store — Vape Store & Product vape Terpercaya</title>
         <meta
           name="description"
-          content="Roma Motor - Bengkel motor terpercaya. Spesialis service motor semua merk, spare part original, mekanik berpengalaman. Servis cepat, harga transparan."
+          content="Ocho Vape Store - vape store terpercaya. Spesialis product vape semua merk, liquid/mod original, vapista berpengalaman. Belanja cepat, harga transparan."
         />
-        <meta property="og:title" content="Roma Motor — Bengkel & Service Motor Terpercaya" />
-        <meta property="og:description" content="Spesialis service motor semua merk. Mekanik berpengalaman, spare part original." />
+        <meta property="og:title" content="Ocho Vape Store — Vape Store & Product vape Terpercaya" />
+        <meta property="og:description" content="Spesialis product vape semua merk. vapista berpengalaman, liquid/mod original." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://romamotor.com" />
+        <link rel="canonical" href="https://ochovape.com" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AutoRepair",
-            "name": "Roma Motor",
-            "description": "Bengkel & Service Motor Terpercaya",
+            "name": "Ocho Vape Store",
+            "description": "Vape Store & Product vape Terpercaya",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Jl. Raya Roma Motor No. 123",
+              "streetAddress": "Jl. Raya Ocho Vape Store No. 123",
               "addressLocality": "Jakarta",
               "addressCountry": "ID"
             },
@@ -54,7 +54,7 @@ export default function HomePage() {
       <main>
         <HeroBanner />
         <RunningText />
-        <Services />
+        <Products />
         <WhyChooseUs />
         <Gallery />
         <Testimonials />

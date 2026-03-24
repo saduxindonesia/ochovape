@@ -8,7 +8,7 @@ import {
 import { FaWhatsapp, FaTiktok } from 'react-icons/fa';
 
 export default function Dashboard() {
-  const { messages, blogPosts, testimonials, services } = useData();
+  const { messages, blogPosts, testimonials, products } = useData();
   const [analytics, setAnalytics] = useState(null);
   const [chartData, setChartData] = useState([]);
 
@@ -30,7 +30,7 @@ export default function Dashboard() {
   ];
 
   const siteStats = [
-    { label: 'Total Layanan', value: services.length, icon: FiFileText, color: 'text-primary', bg: 'bg-primary/10' },
+    { label: 'Total Produk', value: products.length, icon: FiFileText, color: 'text-primary', bg: 'bg-primary/10' },
     { label: 'Pesan Masuk', value: messages.length, icon: FiMail, color: 'text-green-500', bg: 'bg-green-500/10' },
     { label: 'Artikel Blog', value: blogPosts.length, icon: FiFileText, color: 'text-accent', bg: 'bg-accent/10' },
     { label: 'Testimoni', value: testimonials.length, icon: FiUsers, color: 'text-blue-400', bg: 'bg-blue-400/10' },

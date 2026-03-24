@@ -53,8 +53,8 @@ export default function MessagesManager() {
               </div>
               <div className="grid grid-cols-2 gap-2 text-xs mb-3">
                 <div><span className="text-gray-500">WhatsApp:</span> <span className="text-gray-300">{msg.whatsapp}</span></div>
-                <div><span className="text-gray-500">Motor:</span> <span className="text-gray-300">{msg.vehicle}</span></div>
-                <div><span className="text-gray-500">Layanan:</span> <span className="text-gray-300">{msg.service}</span></div>
+                <div><span className="text-gray-500">vape:</span> <span className="text-gray-300">{msg.vehicle}</span></div>
+                <div><span className="text-gray-500">Produk:</span> <span className="text-gray-300">{msg.product}</span></div>
               </div>
               <p className="text-gray-400 text-sm">{msg.message}</p>
             </div>

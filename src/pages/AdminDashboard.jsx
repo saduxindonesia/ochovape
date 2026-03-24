@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import AdminLayout from '../components/admin/AdminLayout';
 import Dashboard from '../components/admin/Dashboard';
 import RunningTextManager from '../components/admin/RunningTextManager';
-import ServicesManager from '../components/admin/ServicesManager';
+import ProductsManager from '../components/admin/ProductsManager';
 import GalleryManager from '../components/admin/GalleryManager';
 import TestimonialsManager from '../components/admin/TestimonialsManager';
 import FAQManager from '../components/admin/FAQManager';
@@ -14,7 +14,7 @@ import SettingsManager from '../components/admin/SettingsManager';
 const panels = {
   'dashboard': Dashboard,
   'running-text': RunningTextManager,
-  'services': ServicesManager,
+  'products': ProductsManager,
   'gallery': GalleryManager,
   'testimonials': TestimonialsManager,
   'faq': FAQManager,
@@ -30,7 +30,7 @@ export default function AdminDashboard() {
   return (
     <>
       <Helmet>
-        <title>Admin Dashboard — Roma Motor</title>
+        <title>Admin Dashboard — Ocho Vape Store</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 

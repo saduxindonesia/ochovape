@@ -22,7 +22,7 @@ export default function SettingsManager() {
   };
 
   const fields = [
-    { name: 'shopName', label: 'Nama Bengkel', type: 'text' },
+    { name: 'shopName', label: 'Nama Vape Store', type: 'text' },
     { name: 'tagline', label: 'Tagline', type: 'text' },
     { name: 'address', label: 'Alamat', type: 'text' },
     { name: 'phone', label: 'No. Telepon', type: 'tel' },

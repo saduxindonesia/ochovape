@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FFFFFF',
-        secondary: '#000000',
-        accent: '#A3A3A3',
+        primary: '#3B82F6', // Blue
+        secondary: '#000000', // Black
+        accent: '#1D4ED8', // Darker Blue
         dark: {
           bg: '#000000',
           card: '#0D0D0D',

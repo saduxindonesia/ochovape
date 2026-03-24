@@ -9,7 +9,7 @@ import {
 const menuItems = [
   { key: 'dashboard', label: 'Dashboard', icon: FiHome },
   { key: 'running-text', label: 'Running Text', icon: FiType },
-  { key: 'services', label: 'Layanan', icon: FiTool },
+  { key: 'products', label: 'Produk', icon: FiTool },
   { key: 'gallery', label: 'Galeri', icon: FiImage },
   { key: 'testimonials', label: 'Testimoni', icon: FiStar },
   { key: 'faq', label: 'FAQ', icon: FiHelpCircle },
@@ -44,7 +44,7 @@ export default function AdminLayout({ children, activeMenu, onMenuChange }) {
         <div className="p-5 border-b border-white/5 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl font-heading font-bold text-primary">
-              Roma<span className="text-white">Motor</span>
+              Ocho<span className="text-white">Vape</span>
             </span>
           </Link>
           <button onClick={() => setSidebarOpen(false)} className="lg:hidden text-gray-400 hover:text-white">
