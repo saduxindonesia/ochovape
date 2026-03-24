@@ -24,7 +24,7 @@ export default function AdminLayout({ children, activeMenu, onMenuChange }) {
 
   const handleLogout = () => {
     logout();
-    navigate('/admin/login');
+    navigate('/sadux/login');
   };
 
   return (

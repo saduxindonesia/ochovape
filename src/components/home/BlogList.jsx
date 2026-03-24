@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
 import { motion } from 'framer-motion';
-import { FiCalendar, FiArrowRight, FiTag } from 'react-icons/fi';
+import { FiArrowRight, FiTag } from 'react-icons/fi';
 
 export default function BlogList() {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ export default function BlogList() {
               onClick={() => handleClick(post.slug)}
             >
               {/* Thumbnail */}
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/10 relative overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-white/5 to-white/2 relative overflow-hidden">
                 {post.thumbnail ? (
                   <img
                     src={post.thumbnail}
@@ -47,7 +47,7 @@ export default function BlogList() {
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-5xl opacity-30">📝</span>
+                    <span className="text-5xl opacity-20">📝</span>
                   </div>
                 )}
                 {/* Tags */}
@@ -66,17 +66,13 @@ export default function BlogList() {
 
               {/* Content */}
               <div className="p-5">
-                <div className="flex items-center gap-2 text-gray-500 text-xs mb-3">
-                  <FiCalendar className="w-3.5 h-3.5" />
-                  <span>{new Date(post.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-                </div>
-                <h3 className="font-heading font-bold text-base mb-2 group-hover:text-primary transition-colors line-clamp-2" style={{ color: 'var(--text-heading)' }}>
+                <h3 className="font-heading font-bold text-base mb-2 group-hover:text-white transition-colors line-clamp-2" style={{ color: 'var(--text-heading)' }}>
                   {post.title}
                 </h3>
                 <p className="text-sm line-clamp-2 mb-4" style={{ color: 'var(--text-body)' }}>
                   {post.content?.substring(0, 120)}...
                 </p>
-                <span className="inline-flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                <span className="inline-flex items-center gap-1 text-gray-300 text-sm font-medium group-hover:gap-2 transition-all">
                   {t('blog.readMore')} <FiArrowRight className="w-4 h-4" />
                 </span>
               </div>

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaClock, FaPhone, FaDirections } from 'react-icons/fa';
+import { trackClick } from '../../utils/analytics';
 
 export default function Location() {
   const { t } = useTranslation();
@@ -17,7 +18,10 @@ export default function Location() {
           className="text-center mb-16"
         >
           <h2 className="section-title">{t('location.title')}</h2>
-          <p className="section-subtitle">{t('location.subtitle')}</p>
+          <p className="section-subtitle mb-4">{t('location.subtitle')}</p>
+          <p className="text-sm md:text-base max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--text-body)' }}>
+            Kami bangga melayani warga <strong className="font-semibold text-primary">Desa Pasir Angin, Kecamatan Cileungsi, Kabupaten Bogor, dan sekitarnya</strong>. Dengan mekanik handal dan layanan terpercaya, kami siap mengatasi segala masalah motor Anda di bengkel terdekat ini.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -87,7 +91,8 @@ export default function Location() {
               href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(settings.address)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary text-white font-heading font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+              onClick={() => trackClick('googlemaps')}
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary text-black font-heading font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
             >
               <FaDirections className="w-5 h-5" />
               {t('location.directions')}

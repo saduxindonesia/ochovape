@@ -29,20 +29,20 @@ export default function FAQ() {
         <div className="space-y-3">
           {faqs.map((faq, index) => (
             <motion.div
-              key={faq.id}
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
               className={`rounded-xl border transition-all duration-300 ${
-                openId === faq.id
-                  ? 'border-primary/30 bg-primary/5'
-                  : 'border-white/5 dark:border-white/5 glass'
+                openId === index
+                  ? 'border-white/30 bg-white/5'
+                  : 'border-white/5 glass'
               }`}
-              style={{ borderColor: openId !== faq.id ? 'var(--border-subtle)' : undefined }}
+              style={{ borderColor: openId !== index ? 'var(--border-subtle)' : undefined }}
             >
               <button
-                onClick={() => toggle(faq.id)}
+                onClick={() => toggle(index)}
                 className="w-full flex items-center justify-between p-4 md:p-5 text-left min-h-[56px]"
               >
                 <span
@@ -53,15 +53,15 @@ export default function FAQ() {
                 </span>
                 <FiChevronDown
                   className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${
-                    openId === faq.id ? 'rotate-180' : ''
+                    openId === index ? 'rotate-180' : ''
                   }`}
                 />
               </button>
               <div
-                className={`faq-answer ${openId === faq.id ? 'open' : ''}`}
+                className={`faq-answer ${openId === index ? 'open' : ''}`}
                 style={{
-                  maxHeight: openId === faq.id ? '500px' : '0',
-                  padding: openId === faq.id ? '0 1.25rem 1.25rem' : '0 1.25rem',
+                  maxHeight: openId === index ? '500px' : '0',
+                  padding: openId === index ? '0 1.25rem 1.25rem' : '0 1.25rem',
                 }}
               >
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--text-body)' }}>

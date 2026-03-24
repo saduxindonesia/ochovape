@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from '../../context/ThemeContext';
+import { useData } from '../../context/DataContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiSun, FiMoon, FiMenu, FiX, FiGlobe } from 'react-icons/fi';
+import { FiMenu, FiX, FiGlobe } from 'react-icons/fi';
+import { trackClick } from '../../utils/analytics';
 
 const navLinks = [
   { key: 'home', href: '#hero' },
@@ -17,7 +18,7 @@ const navLinks = [
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
-  const { darkMode, toggleTheme } = useTheme();
+  const { settings } = useData();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -50,7 +51,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'py-2 bg-black/70 dark:bg-black/70 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-white/5'
+            ? 'py-2 bg-black/70 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-white/5'
             : 'py-4 bg-transparent'
         }`}
       >
@@ -58,7 +59,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-2 group" onClick={(e) => handleNavClick(e, '#hero')}>
             <span className="text-2xl font-heading font-bold text-primary group-hover:text-accent transition-colors">
-              Roma<span className="text-white dark:text-white">Motor</span>
+              Roma<span className="text-white">Motor</span>
             </span>
           </a>
 
@@ -86,17 +87,11 @@ export default function Navbar() {
               <FiGlobe className="w-4 h-4" />
               <span className="uppercase font-medium">{i18n.language}</span>
             </button>
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-gray-300 hover:text-accent rounded-lg hover:bg-white/10 transition-all"
-              aria-label="Toggle theme"
-            >
-              {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
-            </button>
             <a
-              href="https://wa.me/6281234567890"
+              href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick('whatsapp')}
               className="btn-primary !py-2 !px-4 !text-sm"
             >
               {t('nav.booking')}
@@ -105,13 +100,6 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <div className="flex lg:hidden items-center gap-2">
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-gray-300 hover:text-accent rounded-lg"
-              aria-label="Toggle theme"
-            >
-              {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
-            </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 text-gray-300 hover:text-white rounded-lg"
@@ -156,11 +144,11 @@ export default function Navbar() {
                 </button>
               </div>
               <a
-                href="https://wa.me/6281234567890"
+                href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => { trackClick('whatsapp'); setMobileOpen(false); }}
                 className="btn-primary mt-4 !text-lg"
-                onClick={() => setMobileOpen(false)}
               >
                 {t('nav.booking')}
               </a>

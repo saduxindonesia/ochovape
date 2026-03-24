@@ -51,15 +51,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-lg font-heading font-semibold
+    @apply bg-primary text-black px-6 py-3 rounded-lg font-heading font-semibold
     hover:bg-primary/90 active:scale-95 transition-all duration-300
-    shadow-lg shadow-primary/25 hover:shadow-primary/40;
+    shadow-lg shadow-primary/10 hover:shadow-primary/20;
   }
 
   .btn-accent {
-    @apply bg-accent text-secondary px-6 py-3 rounded-lg font-heading font-semibold
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-heading font-semibold
     hover:bg-accent/90 active:scale-95 transition-all duration-300
-    shadow-lg shadow-accent/25 hover:shadow-accent/40;
+    shadow-lg shadow-accent/10 hover:shadow-accent/20;
   }
 
   .btn-outline {
@@ -81,11 +81,11 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary/20 via-transparent to-accent/10;
+    @apply bg-gradient-to-br from-white/10 via-transparent to-white/5;
   }
 }
 
@@ -146,9 +146,9 @@ body:not(.dark) {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(230, 57, 70, 0.5) 30%,
-    rgba(244, 162, 97, 0.8) 50%,
-    rgba(230, 57, 70, 0.5) 70%,
+    rgba(255, 255, 255, 0.3) 30%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 70%,
     transparent
   );
 }
@@ -159,12 +159,12 @@ body:not(.dark) {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(230, 57, 70, 0.3) 30%,
-    rgba(230, 57, 70, 0.6) 50%,
-    rgba(230, 57, 70, 0.3) 70%,
+    rgba(255, 255, 255, 0.1) 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 70%,
     transparent
   );
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* The main stage */
@@ -172,16 +172,9 @@ body:not(.dark) {
   position: relative;
   overflow: hidden;
   padding: 16px 0;
-  background: linear-gradient(
-    135deg,
-    #0d0d0d 0%,
-    #1a0a0a 25%,
-    #1f0d0d 50%,
-    #1a0a0a 75%,
-    #0d0d0d 100%
-  );
-  border-top: 1px solid rgba(230, 57, 70, 0.15);
-  border-bottom: 1px solid rgba(230, 57, 70, 0.1);
+  background: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Animated background streaks */
@@ -193,8 +186,8 @@ body:not(.dark) {
       90deg,
       transparent,
       transparent 100px,
-      rgba(230, 57, 70, 0.03) 100px,
-      rgba(230, 57, 70, 0.03) 101px
+      rgba(255, 255, 255, 0.02) 100px,
+      rgba(255, 255, 255, 0.02) 101px
     );
   animation: rtStreakMove 20s linear infinite;
   pointer-events: none;
@@ -206,7 +199,7 @@ body:not(.dark) {
   inset: 0;
   right: auto;
   width: 100px;
-  background: linear-gradient(to right, #0d0d0d, transparent);
+  background: linear-gradient(to right, #000000, transparent);
   z-index: 5;
   pointer-events: none;
 }
@@ -216,7 +209,7 @@ body:not(.dark) {
   inset: 0;
   left: auto;
   width: 100px;
-  background: linear-gradient(to left, #0d0d0d, transparent);
+  background: linear-gradient(to left, #000000, transparent);
   z-index: 5;
   pointer-events: none;
 }
@@ -258,21 +251,21 @@ body:not(.dark) {
   white-space: nowrap;
   position: relative;
 
-  /* Gradient text — white to gold */
+  /* Gradient text — white/gray */
   background: linear-gradient(
     180deg,
     #ffffff 0%,
-    #f0e6d3 40%,
-    #e8c88a 60%,
-    #d4a855 100%
+    #e5e5e5 40%,
+    #a3a3a3 60%,
+    #888888 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 
   /* Subtle glow */
-  filter: drop-shadow(0 0 8px rgba(244, 162, 97, 0.3))
-          drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2))
+          drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
 }
 
 /* Shine sweep over text */
@@ -301,9 +294,9 @@ body:not(.dark) {
   flex-shrink: 0;
   padding: 0 0.5rem;
   font-size: 0.6rem;
-  color: #E63946;
+  color: #FFFFFF;
   opacity: 0.7;
-  text-shadow: 0 0 8px rgba(230, 57, 70, 0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   animation: rtDotPulse 3s ease-in-out infinite;
 }
 

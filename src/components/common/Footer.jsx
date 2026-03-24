@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useData } from '../../context/DataContext';
 import { FaWhatsapp, FaInstagram, FaTiktok, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { trackClick } from '../../utils/analytics';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -36,6 +37,7 @@ export default function Footer() {
                 href={`https://wa.me/${settings.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick('whatsapp')}
                 className="w-10 h-10 rounded-full bg-green-600/20 flex items-center justify-center text-green-500 hover:bg-green-600/40 transition-all"
               >
                 <FaWhatsapp className="w-5 h-5" />
@@ -44,6 +46,7 @@ export default function Footer() {
                 href={`https://instagram.com/${settings.instagram?.replace('@', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick('instagram')}
                 className="w-10 h-10 rounded-full bg-pink-600/20 flex items-center justify-center text-pink-500 hover:bg-pink-600/40 transition-all"
               >
                 <FaInstagram className="w-5 h-5" />
@@ -52,6 +55,7 @@ export default function Footer() {
                 href={`https://tiktok.com/${settings.tiktok}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick('tiktok')}
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-all"
               >
                 <FaTiktok className="w-5 h-5" />
@@ -130,6 +134,7 @@ export default function Footer() {
               href="https://sadux.my.id"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick('sadux')}
               className="text-primary hover:text-accent transition-colors"
             >
               sadux.my.id

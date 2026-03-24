@@ -17,6 +17,45 @@
     <meta name="twitter:description" content="%VITE_OG_DESCRIPTION%" />
     <link rel="canonical" href="%VITE_SITE_URL%" />
     <title>%VITE_OG_TITLE%</title>
+    <!-- LocalBusiness Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MotorcycleRepair",
+        "name": "%VITE_SHOP_NAME%",
+        "image": "%VITE_SITE_URL%/logo.png",
+        "url": "%VITE_SITE_URL%",
+        "telephone": "%VITE_PHONE%",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "%VITE_ADDRESS%",
+          "addressLocality": "Bogor",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "16820",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-6.3689736",
+          "longitude": "106.9845748"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        "priceRange": "$$"
+      }
+    </script>
   </head>
   <body class="dark">
     <div id="root"></div>

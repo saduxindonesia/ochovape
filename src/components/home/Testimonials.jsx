@@ -3,7 +3,8 @@ import { useData } from '../../context/DataContext';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import { FaStar, FaUserCircle } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -59,20 +60,25 @@ export default function Testimonials() {
                 </p>
 
                 {/* Author */}
-                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-                  {testi.avatar ? (
-                    <img
-                      src={testi.avatar}
-                      alt={testi.name}
-                      className="w-10 h-10 rounded-full object-cover"
-                    />
-                  ) : (
-                    <FaUserCircle className="w-10 h-10 text-gray-500" />
-                  )}
-                  <div>
-                    <p className="text-white font-semibold text-sm">{testi.name}</p>
-                    <p className="text-gray-500 text-xs">{testi.vehicle}</p>
+                <div className="flex items-center justify-between pt-4 border-t border-white/10 mt-auto">
+                  <div className="flex items-center gap-3">
+                    {testi.avatar ? (
+                      <img
+                        src={testi.avatar}
+                        alt={testi.name}
+                        className="w-10 h-10 rounded-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                        {testi.name.charAt(0)}
+                      </div>
+                    )}
+                    <div className="text-left">
+                      <p className="text-white font-semibold text-sm">{testi.name}</p>
+                      <p className="text-gray-500 text-xs">{testi.vehicle || 'Local Guide'}</p>
+                    </div>
                   </div>
+                  <FcGoogle className="w-6 h-6 ml-2" />
                 </div>
               </div>
             </SwiperSlide>

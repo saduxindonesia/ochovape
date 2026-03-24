@@ -27,7 +27,7 @@ export default function Services() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service, index) => (
             <motion.div
-              key={service.id}
+              key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
@@ -36,7 +36,7 @@ export default function Services() {
               style={{ borderColor: 'var(--border-subtle)' }}
             >
               {/* Hover glow effect */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 to-white/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative z-10">
                 {/* Icon */}
@@ -53,7 +53,7 @@ export default function Services() {
                 </p>
 
                 {/* Price */}
-                <div className="text-accent font-heading font-semibold text-sm">
+                <div className="text-gray-300 font-heading font-semibold text-sm">
                   {service.price}
                 </div>
               </div>
@@ -74,3 +74,4 @@ export default function Services() {
     </section>
   );
 }
+

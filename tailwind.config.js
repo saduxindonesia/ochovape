@@ -8,18 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#E63946',
-        secondary: '#1D1D1D',
-        accent: '#F4A261',
+        primary: '#FFFFFF',
+        secondary: '#000000',
+        accent: '#A3A3A3',
         dark: {
-          bg: '#0F0F0F',
-          card: '#1A1A1A',
-          border: '#2A2A2A',
+          bg: '#000000',
+          card: '#0D0D0D',
+          border: '#333333',
         },
         light: {
-          bg: '#F5F5F5',
-          card: '#FFFFFF',
-          border: '#E0E0E0',
+          bg: '#FFFFFF',
+          card: '#F9FAFB',
+          border: '#E5E7EB',
         }
       },
       fontFamily: {
@@ -51,8 +51,8 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
         },
         pulseGlow: {
-          '0%, 100%': { boxShadow: '0 0 5px rgba(230, 57, 70, 0.5)' },
-          '50%': { boxShadow: '0 0 20px rgba(230, 57, 70, 0.8)' },
+          '0%, 100%': { boxShadow: '0 0 5px rgba(255, 255, 255, 0.2)' },
+          '50%': { boxShadow: '0 0 20px rgba(255, 255, 255, 0.4)' },
         },
       },
     },

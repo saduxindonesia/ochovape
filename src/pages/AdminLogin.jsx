@@ -14,7 +14,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setError('');
     if (login(username, password)) {
-      navigate('/admin/dashboard');
+      navigate('/sadux/dashboard');
     } else {
       setError('Username atau password salah!');
     }

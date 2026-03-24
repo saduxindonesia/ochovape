@@ -11,11 +11,14 @@
     "booking": "Booking Sekarang"
   },
   "hero": {
-    "headline": "Bengkel Motor Terpercaya — Servis Cepat, Harga Transparan",
-    "subheadline": "Spesialis service motor semua merk. Mekanik berpengalaman, spare part original.",
+    "headline": "Bengkel Motor Terpercaya & Terdekat di Pasir Angin, Cileungsi",
+    "subheadline": "Mekanik handal siap melayani servis & perbaikan untuk semua jenis motor dengan harga termurah.",
     "cta_wa": "Hubungi Kami via WhatsApp",
     "cta_services": "Lihat Layanan Kami",
-    "badge": "4.9/5 Rating | 500+ Pelanggan Puas"
+    "badge": "4.9/5 Rating | 500+ Pelanggan Puas",
+    "stat_years": "Tahun Pengalaman",
+    "stat_guarantee": "Garansi Service",
+    "stat_customers": "Pelanggan Puas"
   },
   "services": {
     "title": "Layanan Kami",
@@ -23,18 +26,54 @@
     "note": "Melayani semua jenis sepeda motor (Matic, Bebek, Sport, dll)"
   },
   "whyUs": {
-    "title": "Kenapa Pilih Roma Motor?",
-    "subtitle": "Kami berkomitmen memberikan layanan terbaik untuk motor Anda",
+    "title": "Mengapa Memilih Layanan Kami?",
+    "subtitle": "Kami berkomitmen memberikan layanan terbaik untuk motor warga Cileungsi",
     "experience": "Tahun Pengalaman",
     "customers": "Motor Diservis",
     "mechanics": "Mekanik Ahli",
-    "point1_title": "Mekanik Berpengalaman",
-    "point1_desc": "Tim mekanik kami terlatih dan bersertifikat",
-    "point2_title": "Spare Part Original & Garansi",
-    "point2_desc": "Semua spare part bergaransi resmi",
-    "point3_title": "Harga Transparan",
-    "point3_desc": "Tanpa biaya tersembunyi, estimasi biaya di awal"
+    "point1_title": "Mekanik Handal & Berpengalaman",
+    "point1_desc": "Tim mekanik kami terlatih dan bersertifikat mengatasi semua masalah motor",
+    "point2_title": "Suku Cadang Asli & Terlengkap",
+    "point2_desc": "Menyediakan spare part original untuk berbagai merk motor",
+    "point3_title": "Harga Termurah & Transparan",
+    "point3_desc": "Tanpa biaya tersembunyi, estimasi biaya disepakati di awal"
   },
+  "servicesData": [
+    { "icon": "🛢️", "title": "Ganti Oli", "description": "Oli original dari berbagai merk ternama. Pergantian oli berkala untuk menjaga performa mesin motor Anda tetap optimal.", "price": "Mulai Rp 35.000" },
+    { "icon": "🔧", "title": "Tune Up", "description": "Cek & setel mesin menyeluruh agar performa motor optimal. Termasuk pengecekan busi, karburator, dan sistem pembakaran.", "price": "Mulai Rp 50.000" },
+    { "icon": "🛒", "title": "Sparepart", "description": "Jual spare part original & aftermarket berkualitas untuk semua jenis motor. Garansi resmi tersedia.", "price": "Harga Bervariasi" },
+    { "icon": "⚙️", "title": "Service Berkala", "description": "Service ringan & berkala untuk semua merk motor. Mekanik berpengalaman dengan peralatan modern.", "price": "Mulai Rp 75.000" },
+    { "icon": "🛞", "title": "Tambal Ban", "description": "Tambal ban tubeless & ban dalam dengan cepat. Tersedia juga penggantian ban baru berbagai ukuran.", "price": "Mulai Rp 15.000" },
+    { "icon": "🏗️", "title": "Turun Mesin", "description": "Overhaul mesin total oleh mekanik ahli. Solusi tepat untuk motor yang sudah kehilangan performa.", "price": "Mulai Rp 500.000" },
+    { "icon": "🚀", "title": "BoreUp", "description": "Upgrade kapasitas mesin untuk performa lebih bertenaga. Dikerjakan oleh spesialis bore up berpengalaman.", "price": "Mulai Rp 800.000" },
+    { "icon": "🔋", "title": "Kelistrikan", "description": "Perbaikan sistem kelistrikan & injection. Diagnosa akurat dengan alat scanner modern.", "price": "Mulai Rp 50.000" }
+  ],
+  "runningTextsData": [
+    "🔧 Promo Ganti Oli Gratis Cek Mesin!",
+    "📞 Booking Online Sekarang — Tanpa Antri!",
+    "🏆 Bengkel Terpercaya Sejak 2015",
+    "⚡ Service Express 30 Menit!",
+    "🛡️ Garansi Service & Spare Part Original"
+  ],
+  "faqsData": [
+    { "question": "Apakah ini bengkel motor terdekat dari perumahan di Pasir Angin, Cileungsi?", "answer": "Ya, lokasi Roma Motor sangat strategis di Desa Pasir Angin, Cileungsi. Kami adalah pilihan bengkel terdekat bagi warga sekitar yang membutuhkan penanganan cepat dan terpercaya untuk motor yang mogok atau butuh servis berkala." },
+    { "question": "Mengapa Roma Motor dikenal sebagai bengkel motor dengan tarif termurah namun tetap terpercaya?", "answer": "Kami percaya kualitas tinggi tidak harus mahal. Roma Motor selalu memberikan estimasi biaya transparan di awal, menggunakan suku cadang asli tanpa mark-up berlebihan, dan memastikan setiap perbaikan sesuai dengan kerusakan sehingga harga termurah dan tetap terpercaya." },
+    { "question": "Apakah mekanik di sini bisa menangani turun mesin dan perbaikan berat?", "answer": "Tentu saja. Kami memiliki mekanik handal dan berpengalaman yang spesialis dalam menangani perbaikan berat, termasuk turun mesin, bore up, dan masalah kelistrikan kompleks. Diagnosa dilakukan secara akurat untuk hasil yang memuaskan." },
+    { "question": "Apakah bisa booking online atau memanggil mekanik?", "answer": "Anda bisa booking jadwal servis secara online melalui tombol WhatsApp kami. Untuk panggilan darurat di sekitar Cileungsi, silakan hubungi kami agar mekanik terdekat kami bisa membantu pengecekan awal." },
+    { "question": "Apakah ada garansi service dan spare part?", "answer": "Tentu. Setiap servis dan pemasangan suku cadang di bengkel kami disertai dengan garansi. Kami menggunakan spare part original maupun aftermarket berkualitas pilihan mekanik handal kami untuk keamanan Anda." }
+  ],
+  "blogData": [
+    { "title": "Cara Merawat Motor Matic Agar Awet", "summary": "Rutin ganti oli, periksa V-Belt secara berkala, dan pastikan tekanan ban selalu sesuai standar agar motor matic Anda tetap awet dan performanya optimal.", "tags": ["tips", "matic", "perawatan"] },
+    { "title": "Tanda-Tanda Motor Harus Ganti Oli", "summary": "Suara mesin kasar, tenaga motor berkurang, dan warna oli yang sudah hitam pekat adalah tanda-tanda jelas motor Anda harus segera ganti oli.", "tags": ["tips", "oli", "perawatan"] },
+    { "title": "Tips Memilih Spare Part Original vs Aftermarket", "summary": "Untuk komponen kritis seperti piston dan kampas rem, gunakan spare part original. Untuk aksesoris, aftermarket berkualitas bisa menjadi alternatif yang baik.", "tags": ["sparepart", "tips"] }
+  ],
+  "testimonialsData": [
+    { "name": "Ahmad Rizky", "vehicle": "Honda Vario 160", "text": "Bengkel terbaik di Pasir Angin! Service di Roma Motor selalu puas, mekaniknya ramah, harga transparan, dan motor langsung terasa enteng. Recommended banget!" },
+    { "name": "Dewi Sartika", "vehicle": "Yamaha NMAX", "text": "Mekanik handalnya beneran jago menganalisa masalah motor. Spare part original dan harganya jujur, paling murah se-Cileungsi untuk ukuran pelayanan semewah ini." },
+    { "name": "Budi Santoso", "vehicle": "Local Guide", "text": "Baru pertama kali servis ke sini cari di Google Maps karena mogok dekat perumahan. Hasilnya mantul, pengerjaan cepat banget, alatnya modern dan bergaransi." },
+    { "name": "Rina Permata", "vehicle": "Yamaha Aerox", "text": "Turun mesin motor saya dikerjakan dengan sangat rapi dan teliti. Hasilnya mesin kembali seperti baru. Sukses terus Roma Motor!" },
+    { "name": "Fajar Nugroho", "vehicle": "Local Guide", "text": "Pelayanan prima. Ada edukasi perbaikan dari mekaniknya sebelum suku cadang diganti, jadi ga merasa dibohongi. Sangat recommended buat warga Bogor." }
+  ],
   "gallery": {
     "title": "Galeri Bengkel",
     "subtitle": "Lihat suasana bengkel dan proses kerja kami"

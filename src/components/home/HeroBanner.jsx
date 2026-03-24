@@ -2,9 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaStar } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
+import { useData } from '../../context/DataContext';
+import { trackClick } from '../../utils/analytics';
 
 export default function HeroBanner() {
   const { t } = useTranslation();
+  const { settings } = useData();
 
   const handleScroll = (e, href) => {
     e.preventDefault();
@@ -65,8 +68,8 @@ export default function HeroBanner() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6"
         >
-          <span className="block">Bengkel Motor</span>
-          <span className="gradient-text block">Terpercaya</span>
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Bengkel Motor Terpercaya & Terdekat</span>
+          <span className="gradient-text block text-2xl sm:text-3xl md:text-4xl mt-3">di Pasir Angin, Cileungsi</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -87,9 +90,10 @@ export default function HeroBanner() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/6281234567890?text=Halo Roma Motor, saya ingin booking service"
+            href={`https://wa.me/${settings.whatsapp}?text=Halo Roma Motor, saya ingin booking service`}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackClick('whatsapp')}
             className="flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-xl font-heading font-semibold hover:bg-green-500 active:scale-95 transition-all shadow-lg shadow-green-600/30 text-base sm:text-lg w-full sm:w-auto justify-center"
           >
             <FaWhatsapp className="w-5 h-5" />
@@ -112,13 +116,13 @@ export default function HeroBanner() {
           className="flex items-center justify-center gap-8 sm:gap-12 mt-16 pt-8 border-t border-white/10"
         >
           {[
-            { value: '10+', label: 'Tahun' },
-            { value: '5000+', label: 'Motor' },
-            { value: '50+', label: 'Mekanik' },
+            { value: '10+', label: t('hero.stat_years') || 'Tahun Pengalaman' },
+            { value: '100%', label: t('hero.stat_guarantee') || 'Garansi Service' },
+            { value: 'Ribuan', label: t('hero.stat_customers') || 'Pelanggan Puas' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-heading font-bold text-primary">{stat.value}</div>
-              <div className="text-xs sm:text-sm text-gray-500 mt-1">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl font-heading font-bold text-white">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-gray-400 mt-1">{stat.label}</div>
             </div>
           ))}
         </motion.div>

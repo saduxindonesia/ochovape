@@ -61,9 +61,9 @@ export default function WhyChooseUs() {
   ];
 
   const counters = [
-    { value: '10', suffix: '+', label: t('whyUs.experience') },
-    { value: '5000', suffix: '+', label: t('whyUs.customers') },
-    { value: '50', suffix: '+', label: t('whyUs.mechanics') },
+    { value: '10', suffix: '+', label: t('hero.stat_years') || 'Tahun Pengalaman' },
+    { value: '100', suffix: '%', label: t('hero.stat_guarantee') || 'Garansi Service' },
+    { value: '99', suffix: '%', label: t('hero.stat_customers') || 'Pelanggan Puas' },
   ];
 
   return (

@@ -17,9 +17,9 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/blog/:slug" element={<BlogDetailPage />} />
-              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/sadux/login" element={<AdminLogin />} />
               <Route
-                path="/admin/dashboard"
+                path="/sadux/dashboard"
                 element={
                   <ProtectedRoute>
                     <AdminDashboard />

@@ -2,11 +2,10 @@ import { useData } from '../../context/DataContext';
 
 export default function RunningText() {
   const { runningTexts } = useData();
-  const activeTexts = runningTexts.filter((t) => t.active);
+  const activeTexts = runningTexts.filter((rt) => rt.active);
 
   if (activeTexts.length === 0) return null;
 
-  // Duplicate items for seamless infinite scroll
   const items = [...activeTexts, ...activeTexts, ...activeTexts, ...activeTexts];
 
   return (
