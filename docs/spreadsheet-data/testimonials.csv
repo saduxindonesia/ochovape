@@ -1,6 +1,6 @@
-id	name	vehicle	rating	text	avatar
-1	Ahmad Rizky	Honda Vario 160	5	Bengkel terbaik di Pasir Angin! Service di Roma Motor selalu puas, mekaniknya ramah, harga transparan, dan motor langsung terasa enteng. Recommended banget!	
-2	Dewi Sartika	Yamaha NMAX	5	Mekanik handalnya beneran jago menganalisa masalah motor. Spare part original dan harganya jujur, paling murah se-Cileungsi untuk ukuran pelayanan semewah ini.	
-3	Budi Santoso	Local Guide	5	Baru pertama kali servis ke sini cari di Google Maps karena mogok dekat perumahan. Hasilnya mantul, pengerjaan cepat banget, alatnya modern dan bergaransi.	
-4	Rina Permata	Yamaha Aerox	5	Turun mesin motor saya dikerjakan dengan sangat rapi dan teliti. Hasilnya mesin kembali seperti baru. Sukses terus Roma Motor!	
-5	Fajar Nugroho	Local Guide	5	Pelayanan prima. Ada edukasi perbaikan dari mekaniknya sebelum suku cadang diganti, jadi ga merasa dibohongi. Sangat recommended buat warga Bogor.	
+id,name,vehicle,rating,text,avatar
+1,Ahmad Rizky,Caliburn G2,5,"Vape Store terlengkap di Pasir Angin! Liquid di Ocho Vape selalu update, Vapistanya asyik diajak ngobrol, harga jelas transparan. Recommended banget buat vapers sekitar!",
+2,Dewi Sartika,Ursa Nano,5,"Vapistanya beneran bantu milih liquid yang cocok buat device saya. Semua barang 100% original, paling nyaman belanja di sini pokoknya.",
+3,Budi Santoso,Hexohm,5,"Baru mampir nyari kawat sama kapas karena coil udah gosong. Hasil coiling di sini rapi banget, flavor liquid kembali nampol. Sukses terus!",
+4,Rina Permata,Centaurus M200,5,"Beli mod dan rda sekalian minta build-in. Hasilnya memuaskan banget, uap tebal dan rasa liquid fruity saya dapet banget. Ocho Vape Store andalan!",
+5,Fajar Nugroho,XROS 3,5,"Koleksi cartridge-nya lengkap. Vapistanya selalu edukasi cara merawat pod biar awet sebelum beli. Pelayanan mantap untuk warga Bogor!",
