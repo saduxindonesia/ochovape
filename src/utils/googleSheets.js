@@ -95,81 +95,88 @@ export async function replaceSheet(sheetName, data) {
 
 // ━━━ TYPE CASTING ━━━
 
+const getId = (row, idx) => Number(row.id || row.ID) || (idx + 1);
+
 export function castProducts(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    icon: row.icon || '🔧',
-    title: String(row.title || ''),
-    description: String(row.description || ''),
-    price: String(row.price || ''),
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    icon: row.icon || row.Icon || '🔧',
+    title: String(row.title || row.Title || ''),
+    description: String(row.description || row.Description || ''),
+    price: String(row.price || row.Price || ''),
   }));
 }
 
 export function castTestimonials(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    name: String(row.name || ''),
-    vehicle: String(row.vehicle || ''),
-    rating: Number(row.rating) || 5,
-    text: String(row.text || ''),
-    avatar: String(row.avatar || ''),
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    name: String(row.name || row.Name || ''),
+    vehicle: String(row.vehicle || row.Vehicle || ''),
+    rating: Number(row.rating || row.Rating) || 5,
+    text: String(row.text || row.Text || ''),
+    avatar: String(row.avatar || row.Avatar || ''),
   }));
 }
 
 export function castFaqs(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    question: String(row.question || ''),
-    answer: String(row.answer || ''),
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    question: String(row.question || row.Question || ''),
+    answer: String(row.answer || row.Answer || ''),
   }));
 }
 
 export function castRunningTexts(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    text: String(row.text || ''),
-    active: row.active === true || String(row.active).toLowerCase() === 'true',
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    text: String(row.text || row.Text || ''),
+    active: row.active === true || String(row.active || row.Active).toLowerCase() === 'true',
   }));
 }
 
 export function castBlogPosts(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    title: String(row.title || ''),
-    slug: String(row.slug || ''),
-    thumbnail: String(row.thumbnail || ''),
-    date: String(row.date || ''),
-    tags: row.tags
-      ? (typeof row.tags === 'string' ? row.tags.split(',').map((t) => t.trim()) : row.tags)
-      : [],
-    content: String(row.content || ''),
-  }));
+  return (rows || []).map((row, idx) => {
+    const rawTags = row.tags || row.Tags;
+    return {
+      id: getId(row, idx),
+      title: String(row.title || row.Title || ''),
+      slug: String(row.slug || row.Slug || ''),
+      thumbnail: String(row.thumbnail || row.Thumbnail || ''),
+      date: String(row.date || row.Date || ''),
+      tags: rawTags
+        ? (typeof rawTags === 'string' ? rawTags.split(',').map((t) => t.trim()) : rawTags)
+        : [],
+      content: String(row.content || row.Content || ''),
+    };
+  });
 }
 
 export function castGallery(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    url: String(row.url || ''),
-    caption: String(row.caption || ''),
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    url: String(row.url || row.Url || row.URL || ''),
+    caption: String(row.caption || row.Caption || ''),
   }));
 }
 
 export function castSettings(rows) {
   const obj = {};
   (rows || []).forEach((row) => {
-    if (row.key) obj[row.key] = row.value ?? '';
+    const key = row.key || row.Key;
+    const value = row.value ?? row.Value ?? '';
+    if (key) obj[key] = value;
   });
   return obj;
 }
 
 export function castMessages(rows) {
-  return (rows || []).map((row) => ({
-    id: Number(row.id),
-    name: String(row.name || ''),
-    whatsapp: String(row.whatsapp || row.phone || ''),
-    vehicle: String(row.vehicle || ''),
-    product: String(row.product || ''),
-    message: String(row.message || ''),
-    date: String(row.date || ''),
+  return (rows || []).map((row, idx) => ({
+    id: getId(row, idx),
+    name: String(row.name || row.Name || ''),
+    whatsapp: String(row.whatsapp || row.Whatsapp || row.phone || row.Phone || ''),
+    vehicle: String(row.vehicle || row.Vehicle || ''),
+    product: String(row.product || row.Product || ''),
+    message: String(row.message || row.Message || ''),
+    date: String(row.date || row.Date || ''),
   }));
 }
